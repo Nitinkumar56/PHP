@@ -1,0 +1,36 @@
+.first{
+    background-color: black;
+    height:50px;
+    width:100%;
+    color: aliceblue;
+}
+.second{
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+}
+.middle{
+    display: flex;
+    height: 250px;
+}
+.third{
+    background-color: red;
+    width: 33.3%;
+}
+.fourth{
+    background-color: blue;
+    height:125px;
+}
+.fifth{
+    background-color: black;
+    color: aliceblue;
+    height: 125px;
+}
+.middle1{
+    width: 66.6%;
+}
+.sixth{
+    background-color: green;
+    height: 50px;
+    width: 100%;
+}

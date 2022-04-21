@@ -1,0 +1,42 @@
+.box{
+    background-color: blue;
+    margin: 13px;
+    text-align: center;
+}
+.box:hover{
+    background-color: burlywood;
+}
+input{
+    background-color: blueviolet;
+    float: right;
+    transform: scale(1,2);
+    margin-block-end: 30px;
+}
+input:hover{
+    transform: scale(5,7);
+}
+input:focus{
+    background-color: red;
+}
+.xy{
+    background-color: green;
+}
+.xy:active{
+    background-color: purple;
+}
+a:visited{
+    color: red;
+}
+.btn{
+    transform: rotate(30deg);
+    transform:50inche;
+}
+.btn:hover{
+    transform:rotate(180deg);
+}
+.btn1{
+    transform: skew(0deg);
+}
+.btn1:hover{
+    transform: skew(40deg);
+}

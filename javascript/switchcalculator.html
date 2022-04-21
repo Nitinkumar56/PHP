@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let result;
+
+        var operator = prompt('Enter operator ( either +, -, *, / or % ): ');
+
+
+        var a = parseFloat(prompt('Enter first number: '));
+        var b = parseFloat(prompt('Enter second number: '));
+
+        switch (operator) {
+            case '+':
+                result = a + b;
+                console.log(`${a} + ${b} = ${result}`);
+                break;
+
+            case '-':
+                result = a - b;
+                console.log(`${a} - ${b} = ${result}`);
+                break;
+
+            case '*':
+                result = a * b;
+                console.log(`${a} * ${b} = ${result}`);
+                break;
+
+            case '/':
+                result = a / b;
+                console.log(`${a} / ${b} = ${result}`);
+                break;
+
+            case '%':
+                result = a % b;
+                console.log(`${a} % ${b} = ${result}`);
+                break;
+
+            default:
+                console.log('Invalid operator');
+                break;
+        }
+    </script>
+</body>
+
+</html>

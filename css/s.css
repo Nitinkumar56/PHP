@@ -1,0 +1,24 @@
+.middle{
+    display: flex;
+    height: 250px;
+}
+.left{
+    width:33.3%;
+    background-color:skyblue;
+}
+.center{
+    width:33.3%;
+    background-color:red;
+}
+.right{
+    width:33.3%;
+background-color:blue;
+}
+.uper{
+    background-color:black;
+    height:50px;
+}
+.lower{
+    background-color:black;
+    height: 50px;
+}

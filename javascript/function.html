@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        var a=10;
+        function sms()
+        {
+            if(a!=10)
+            {
+                alert("you are not eligible");
+            }
+            else
+            {
+                alert("you are eligible");
+            }
+        }
+        sms();
+
+        function myFunction()
+        {
+            alert("calling a Function!");
+        }
+        myFunction();
+
+        function sayHello(name)
+        {
+            alert("Hi, " + name);
+        }
+        sayHello("david");
+        sayHello("sarah");
+        sayHello("john");
+
+        function say(name,age){
+            document.write(name + " is " + age + " years old. ");
+        }
+        say("john",20);
+
+        alert("do you really want to leave this pages?")
+
+        var user = prompt("please enter your name");
+        alert(user);
+
+        var result=confirm("do you really want to leave this page?");
+        if(result==true){
+            alert("thanks for visiting");
+        }
+        else{
+            alert("thanks for staying with us ");
+        }
+
+        function openwith(){
+            myWindow.open(" ", "myWindow", "width=200,height=100");
+
+        }
+        function closeWin(){
+            myWindow.close();
+        }
+        </script>
+</body>
+</html>

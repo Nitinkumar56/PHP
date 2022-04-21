@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+img {
+	border: none;
+	outline: none;
+}
+ul, li, p, h1, h2, h3, h4, h5, h6, a {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+}
+.wrapper
+{
+	width:100%;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.Header
+{
+	float:left;
+	width:100%;
+	background:#996600;
+	color:#fff;
+}
+.logo
+{
+	  float: left;
+    margin: 15px;
+	width:188px;
+}
+.nav
+{
+	float:right;
+	width:350px;
+	font-size:14px;
+}
+.nav ul li
+{
+	float:left;
+}
+.nav ul li a
+{
+ background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    color:#969696;
+    float: left;
+    margin: 55px 5px 5px;
+    padding: 10px;
+}
+.nav ul li a:hover
+{
+	text-decoration:underline;
+    color:#FFFFFF;
+	background: none repeat scroll 0 0 #CC9900;
+}
+.SideBar
+{
+    background: none repeat scroll 0 0   #CC9900;
+    float: left;
+    height: 458px;
+    width: 15%;
+	color:#fff;
+}
+.SideBar ul
+{
+	margin:25px 0 0 0;
+}
+.SideBar li
+{
+	 float: left;
+    list-style: none outside none;
+    text-align: center;
+    width: 100%;
+}
+.SideBar li a
+{
+	 color: #FFFFFF;
+    float: left;
+    padding: 5px 0;
+    width: 100%;
+	font-size:14px;
+}
+.SideBar li a:hover
+{
+	background:#996600;
+	color:#fff;
+	border-radius: 90px 90px 90px 90px;
+	
+}
+.SideBar li.active a
+{
+	background:#996600;
+	color:#fff;
+	border-radius: 90px 90px 90px 90px;
+}
+.Mid-panel
+{
+	float:left;
+	width:85%;
+	text-align:center;
+   background:#FFFFFF;
+   min-height: 454px;
+}
+.messagePanel
+{
+	background: none repeat scroll 0 0  #FFCC66;
+    color: #000000;
+    height: 300px;
+    margin: 83px auto 0;
+    text-align: left;
+    width: 750px;
+   /*color:#FF9900;
+   font-weight:bolder;
+  font-size:24px;*/
+   }
+.footer
+{
+	 background: none repeat scroll 0 0 #996600;
+    color: #FFFFFF;
+    float: left;
+    font-size: 14px;
+    padding:35px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*view table css starts*/
+.viewTable
+{
+  float: left;
+  font-size: 14px;
+  line-height: 23px;
+  width: 100%;
+}
+
+.viewTable font
+{
+float:left;
+width:50%;
+}
+.viewTable span
+{
+float:left;
+width:40%;
+}
+/*view table css end*/
+
+/* back button css starts */
+.back
+{
+ float: left;
+ text-align: center;
+ width: 100%;
+ }
+
+/*back button css ends */
+
+.editTable
+{
+    float: left;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 10px 0 0;
+    width: 350px;
+}
+.editTable font
+{
+float: left;
+ margin: 4px;
+ width: 48%;
+}
+
+.editTable span
+{
+  float: left;
+    margin: 2px;
+    width: 44%;
+  }
+.editTable input[type="text"] 
+{
+   border: medium none;
+    float: left;
+    padding: 5px;
+}
+
+.editTable span select
+{
+float:left;
+width:50px;
+padding:2px;
+}
+

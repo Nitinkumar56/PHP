@@ -1,0 +1,42 @@
+.uper{
+    display: flex;
+    height: 50px;
+}
+.first{
+    background-color: black;
+    color: antiquewhite;
+    width: 33.3%;
+}
+.second{
+    background-color: aqua;
+    width: 33.3%;
+}
+.third{
+    background-color: orangered;
+    width: 33.3%;
+}
+.middle{
+    display: flex;
+    height: 250px;
+}
+.middle1{
+    width: 50%;
+}
+.fourth{
+    background-color: orchid;
+    width:50%;
+}
+.fifth{
+    background-color: black;
+    color: antiquewhite;
+    height: 125px;
+}
+.sixth{
+    background-color: green;
+    height: 125px;
+}
+.seventh{
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+}
