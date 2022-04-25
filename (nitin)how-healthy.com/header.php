@@ -12,12 +12,12 @@
     <div id="uper">
         <div class="u1"><br><br><br>
             <ul>
-                <li><a href="home.php" style="color:black;"><span></span>Home</a></li>
-                <li><a href="exercise.php" style="color:black;"><span></span>Exercise</a></li>
-                <li><a href="nutrition.php" style="color:black;"><span></span>Nutrition</a></li>
-                <li><a href="community.php" style="color:black;"><span></span>Community</a></li>
-                <li><a href="commentsection.php" style="color:black;"><span></span>Comment Section</a></li>
-                <li><a href="contactus.php" style="color:black;"><span></span>Contact Us</a></li>
+                <li><a href="home.php" style="color:black;" class="all1" ><span></span>Home</a></li>
+                <li><a href="exercise.php" style="color:black;" class="all1"><span></span>Exercise</a></li>
+                <li><a href="nutrition.php" style="color:black;" class="all1"><span></span>Nutrition</a></li>
+                <li><a href="community.php" style="color:black;" class="all1"><span></span>Community</a></li>
+                <li><a href="commentsection.php" style="color:black;" class="all1"><span></span>Comment Section</a></li>
+                <li><a href="contactus.php" style="color:black;" class="all1"><span></span>Contact Us</a></li>
             </ul>
         </div></div>
 </body>

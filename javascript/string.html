@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid rgb(125, 125, 236);
+            background-color: rgb(199, 194, 194);
+        }
+        hr{
+            width: 20%;
+            height: 10px;
+            background-color: rgb(214, 112, 112);
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+    <script>
+        var str="this is string literal";
+        document.write(str);
+    </script>
+    <br><hr>
+    <script>
+        var stringname= new String("hello javascript sting");
+        document.write(stringname);
+    </script>
+    <br><hr>
+    <!-- javascript string method -->
+    <script>
+        // concat()
+        var s1="javascript";
+        var s2="concat example";
+        var s3=s1.concat(s2);
+        document.write(s3);
+    </script>
+    <br><hr>
+    <script>
+        // charAt()
+        var str="javascript";
+        document.write(str.charAt(2));
+    </script>
+    <br><hr>
+    <script>
+        // indexOf()
+            var s1="javascript from javatpoint indexof";
+            var n=s1.indexOf("from");
+            document.write(n);
+    </script>
+    <br><hr>
+    <script>
+        // lastIndexOf()
+        var s1="javascript from javatpoint indexof";
+        var n=s1.lastIndexOf("java");
+        document.write(n);
+    </script>
+    <br><hr>
+    <script>
+        // toLowerCase()
+        var s1="JavaScript toLowerCase Example";
+        var n=s1.toLowerCase();
+        document.write(n);
+    </script>
+    <br><hr>
+    <script>
+        // toUpperCase()
+        var s1="javascript toUpperCase Example";
+        var n=s1.toUpperCase();
+        document.write(n);
+    </script>
+    <br><hr>
+    <script>
+        // slice()
+        var s1="abcdefg";
+        var n=s1.slice(2,5);
+        document.write(n);
+    </script>
+    <br><hr>
+    <script>
+        // trim()
+        var s1="   javascript trim   ";
+        var n=s1.trim();
+        document.write(n);
+    </script>
+    <br><hr>
+    <script>
+        // split()
+        var s1="This is JavaTpoint website";
+        document.write(s1.split("This is nitin program "));
+    </script>
+    <hr /></div>
+</body>
+</html>
