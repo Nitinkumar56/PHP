@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="family.css">
 </head>
 <body>
-    <div class="head"><marquee behavior="alternate">Howhealthy</marquee></div>
-    <div id="uper">
+    <div id="n"> <div class="head"><marquee behavior="alternate">Howhealthy</marquee></div></div>
+    <div id="uper"><br><br><br><br>
         <div class="u1"><br><br><br>
             <ul>
                 <li><a href="home.php" style="color:black;" class="all1" ><span></span>Home</a></li>

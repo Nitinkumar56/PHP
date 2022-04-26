@@ -5,31 +5,37 @@
 .middle{
     margin-top: 40px;
 }
+#n{
+    position: fixed;
+    width: 100%;
+}
 .head{
     height: 50px;
-    width: 100%;
+    
     font-weight: bolder;
     font-size:40px;
     font-style: italic;
     text-align:center;
     background: linear-gradient(90deg, #eb2626,#f8f824, #ff7bf8, #879cf1, #f73dcb,#f74c4c );
     color:whitesmoke;
-    border: 3px dotted whitesmoke;
+    border: 8px double limegreen;
 }
 #uper{
     height: 400px;
-    width: 100%;
+
     background-size:cover;
     background-image: url(shelley-pauls-I58f47LRQYM-unsplash.jpg);
+    border: 8px double limegreen;
 }
 .u1{
-    height: 400px;
+    height: 450px;
     width: 50%;
     border-radius: calc(20%);
     background-size: cover;
     background-image:url(fruit.jpg);
     margin-left: 24%;
-    border: 8px double limegreen;
+    border-left: 8px double limegreen;
+    border-right: 8px double limegreen;
 }
 .u1:hover{
     background-image: url(shelley-pauls-I58f47LRQYM-unsplash.jpg);
