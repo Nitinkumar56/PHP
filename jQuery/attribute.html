@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb1{
+            background-color: aqua;
+            font-weight: bold;
+        }
+    </style>
+    <script src="http://code.jquery.com/jQuery-3.1.1.js"></script>
+</head>
+<body>
+    <table border="5" class="tb1">
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <script>
+        $(function(){
+            $("table").removeAttr("border");
+            $("table").removeAttr("class");
+        });
+    </script>    
+</body>
+</html>
