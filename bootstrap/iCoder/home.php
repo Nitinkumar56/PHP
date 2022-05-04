@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about.html">about</a>
+                        <a class="nav-link" href="about.php">about</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact us</a>
+                        <a class="nav-link" href="contact.php">Contact us</a>
                     </li>
 
                 </ul>
@@ -131,7 +131,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1400x500/?nature,water" class="d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/1400x500/?code,laptop" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Wellcome to iCoder</h2>
                     <p>Technology News, Development and Treads</p>
@@ -141,7 +141,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1400x500/?nature,pythen" class="d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/1400x500/?nature,fish" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>The Best Coding Blog</h2>
                     <p>Technology News, Development and Treads</p>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://source.unsplash.com/1400x500/?code,water" class="d-block w-100" alt="...">
+                <img src="https://source.unsplash.com/1400x500/?nature,flower" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Award winning Blog</h2>
                     <p>Technology News, Development and Treads</p>
@@ -188,7 +188,7 @@
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img class="bd-placeholder-img" width="200" height="250"
-                            src="img/photo-1460500063983-994d4c27756c.jpg">
+                            src="https://source.unsplash.com/1400x500/?code,car">
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img class="bd-placeholder-img" width="200" height="250"
-                            src="img/photo-1573898086906-1f9232b65467.jpg">
+                            src="https://source.unsplash.com/1400x500/?nature,bird">
                     </div>
                 </div>
             </div>
@@ -226,7 +226,7 @@
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img class="bd-placeholder-img" width="200" height="250"
-                            src="img/photo-1435820394963-a15297f976fd (1).jpg">
+                            src="https://source.unsplash.com/1400x500/?code,laptop">
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img class="bd-placeholder-img" width="200" height="250"
-                            src="img/jane-palash-SpvR3bbNJJw-unsplash.jpg">
+                            src="https://source.unsplash.com/1400x500/?nature,tree">
                     </div>
                 </div>
             </div>

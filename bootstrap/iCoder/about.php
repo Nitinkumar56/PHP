@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link active" aria-current="page" href="home.php">Home</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="/about.html">About</a>
+                        <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact us</a>
+                        <a class="nav-link" href="contact.">Contact us</a>
                     </li>
                    
                 </ul>
@@ -52,8 +52,8 @@
                     prose here.</p>
             </div>
             <div class="col-md-5">
-               <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
-               height="300" src="img/adam-borkowski--K3gnBy0LlA-unsplash.jpg">
+               <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+               height="500" src="https://source.unsplash.com/1400x500/?nature,flower">
 
             </div>
         </div>
@@ -69,8 +69,8 @@
                     prose here.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
-                height="300" src="img/jane-palash-SpvR3bbNJJw-unsplash.jpg">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="https://source.unsplash.com/1400x500/?nature,animals">
 
             </div>
         </div>
@@ -86,8 +86,8 @@
                     prose here.</p>
             </div>
             <div class="col-md-5">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300"
-                height="300" src="img/adam-borkowski--K3gnBy0LlA-unsplash.jpg">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                height="500" src="https://source.unsplash.com/1600x800/?nature,fruit">
 
 
             </div>
