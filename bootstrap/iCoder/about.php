@@ -31,7 +31,7 @@
                         <a class="nav-link" href="about.php">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.">Contact us</a>
+                        <a class="nav-link" href="contact.php">Contact us</a>
                     </li>
                    
                 </ul>
@@ -87,7 +87,7 @@
             </div>
             <div class="col-md-5">
                 <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                height="500" src="https://source.unsplash.com/1600x800/?nature,fruit">
+                height="500" src="https://source.unsplash.com/1600x800/?nature,fruit" class="img-thumbnail">
 
 
             </div>
