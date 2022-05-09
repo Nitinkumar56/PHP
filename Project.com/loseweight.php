@@ -102,7 +102,7 @@
     </button>
   </div>
 
-  <div class="container mx-6">
+  <div class="container my-5">
         <div class="fast">
             <div class="how to">
     <h2>How to Lose Weight Fast</h2>

@@ -44,7 +44,7 @@
             <a class="nav-link active" href="about.php">about</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" href="contact.php">Contact us</a>
+            <a class="nav-link active" href="contactus.html">Contact us</a>
           </li>
 
         </ul>
@@ -80,7 +80,7 @@
           <button class="btn btn-warning">Web Development</button>
           <button class="btn btn-success">Tech Fun</button>
         </div>
-      </div>
+        </div>
       <div class="carousel-item">
         <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
         <div class="carousel-caption d-none d-md-block">
@@ -133,7 +133,7 @@
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="mb-auto">Look up. The sun is shining, the birds are singing, and the sky is blue. How beautiful
                  a world it is! How do you enjoy your life in such a wonderful world?...</p>
-              <a href="loseweight.php" class="stretched-link">Continue reading</a>
+              <a href="keephealthy.php" class="stretched-link">Continue reading</a>
             </div>
             <div class="col-auto d-none d-lg-block">
               <img class="bd-placeholder-img" width="200" height="250"
@@ -148,12 +148,12 @@
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">How to Lose Weight</h3>
+            <strong class="d-inline-block mb-2 text-primary">Exercises</strong>
+            <h3 class="mb-0">Exercise</h3>
             <div class="mb-1 text-muted">Nov 12</div>
             <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
               lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <a href="exercise.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
@@ -164,12 +164,12 @@
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">Design</strong>
-            <h3 class="mb-0">Post title</h3>
+            <strong class="d-inline-block mb-2 text-success">Nutrition</strong>
+            <h3 class="mb-0">Nutrition</h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
               additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <a href="nutrition.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
@@ -184,12 +184,12 @@
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-danger">Front End</strong>
-            <h3 class="mb-0">Bootstrap Template</h3>
+            <strong class="d-inline-block mb-2 text-danger">Community</strong>
+            <h3 class="mb-0">Community</h3>
             <div class="mb-1 text-muted">Nov 12</div>
             <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
               lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <a href="community.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
