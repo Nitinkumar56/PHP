@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" align="center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="home.php">Home</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
             <a class="nav-link active" href="about.php">about</a>
@@ -102,11 +102,47 @@
     </button>
   </div>
   <div class="container my-5">
-  <h2>Want to become a healthier person?Follow these tips & live a long and happy life.. </h2>
+    <h2>Want to become a healthier person?Follow these tips & live a long and happy life.. </h2>
     <p>Do you want to live a long life? Are you healthy? Take this advice: We should eat vegetables and fruits, some fish, like tuna and salmon, drink lots of water, and use healthy oils, like olive oil, canola oil. We should take a walk, as much as possible. We should avoid tobacco, alcohol, drugs.
-
+      
       All people should have checkups to prevent cancer and detect early.</p>
-  </div>
+    </div>
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">Weight lose</strong>
+              <h3 class="mb-0">How to Lose Weight</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Working on weight loss? Then you probably want results -- fast.<br />
+          Let me save you some time: skip the fad diets....</p>
+              <a href="loseweight.php" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250"
+                src="https://source.unsplash.com/1400x500/?code,laptop">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning">Yourself Healthy</strong>
+              <h3 class="mb-0">Keeping Yourself Healthy </h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">Look up. The sun is shining, the birds are singing, and the sky is blue. How beautiful
+                 a world it is! How do you enjoy your life in such a wonderful world?...</p>
+              <a href="loseweight.php" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250"
+                src="https://source.unsplash.com/1400x500/?nature,tree">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="container my-4">
     <div class="row mb-2">
       <div class="col-md-6">
@@ -180,80 +216,6 @@
     </div>
   </div>
 
-  <div class="container my-4">
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-danger">Weight lose</strong>
-            <h3 class="mb-0">How to Lose Weight</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">Working on weight loss? Then you probably want results -- fast.<br />
-        Let me save you some time: skip the fad diets....</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?code,laptop">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-warning">Yourself Healthy</strong>
-            <h3 class="mb-0">Keeping Yourself Healthy </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">Look up. The sun is shining, the birds are singing, and the sky is blue. How beautiful
-               a world it is! How do you enjoy your life in such a wonderful world?...</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?nature,tree">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="container my-4">
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-danger">Weight lose</strong>
-            <h3 class="mb-0">How to Lose Weight</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">Working on weight loss? Then you probably want results -- fast.<br />
-        Let me save you some time: skip the fad diets....</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?code,laptop">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-warning">Yourself Healthy</strong>
-            <h3 class="mb-0">Keeping Yourself Healthy </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">Look up. The sun is shining, the birds are singing, and the sky is blue. How beautiful
-               a world it is! How do you enjoy your life in such a wonderful world?...</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?nature,tree">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <footer class="container bg-warning">
     <p class="float-end"><a href="#">Back to top</a></p>
     <p>© 2021–2022 Nitin,<a href="index.html">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
