@@ -107,7 +107,7 @@
       
       All people should have checkups to prevent cancer and detect early.</p>
     </div>
-    <div class="container my-4">
+    <div class="container my-5">
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -121,7 +121,7 @@
             </div>
             <div class="col-auto d-none d-lg-block">
               <img class="bd-placeholder-img" width="200" height="250"
-                src="https://source.unsplash.com/1400x500/?code,laptop">
+                src="https://source.unsplash.com/1400x500/?picture,loseweight">
             </div>
           </div>
         </div>
@@ -137,13 +137,13 @@
             </div>
             <div class="col-auto d-none d-lg-block">
               <img class="bd-placeholder-img" width="200" height="250"
-                src="https://source.unsplash.com/1400x500/?nature,tree">
+                src="https://source.unsplash.com/1400x500/?nature,healthy">
             </div>
           </div>
         </div>
       </div>
     </div>
-  <div class="container my-4">
+  <div class="container my-5">
     <div class="row mb-2">
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -151,13 +151,13 @@
             <strong class="d-inline-block mb-2 text-primary">Exercises</strong>
             <h3 class="mb-0">Exercise</h3>
             <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-              lead-in to additional content.</p>
+            <p class="card-text mb-auto">Physical exercises are generally grouped into three types,depending
+               on the overall effect they have on the human body:</p>
             <a href="exercise.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?code,car">
+              src="https://source.unsplash.com/1400x500/?nature,exercises">
           </div>
         </div>
       </div>
@@ -167,49 +167,48 @@
             <strong class="d-inline-block mb-2 text-success">Nutrition</strong>
             <h3 class="mb-0">Nutrition</h3>
             <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-              additional content.</p>
+            <p class="mb-auto"><b>Nutrition </b>, nourishment, or aliment, is the supply of materials
+             - food - required by organisms and cells to stay alive.....</p>
             <a href="nutrition.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?nature,bird">
+              src="https://source.unsplash.com/1400x500/?nature,nutrition">
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container my-4">
+  <div class="container my-5">
     <div class="row mb-2">
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-danger">Community</strong>
+            <strong class="d-inline-block mb-2 text-danger">Health Issues</strong>
             <h3 class="mb-0">Community</h3>
             <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-              lead-in to additional content.</p>
+            <p class="card-text mb-auto">Allergy is a hypersensitive reaction of the immune system produced by several
+               origins such as environmental factors, drugs, foods....</p>
             <a href="community.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?code,laptop">
+              src="https://source.unsplash.com/1400x500/?nature,healthissue">
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-warning">Pythen</strong>
-            <h3 class="mb-0">Learn Pythen</h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-              additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <strong class="d-inline-block mb-2 text-warning">Habits</strong>
+            <h3 class="mb-0">10 Habits of a Healthy Family Culture</h3>
+            <div class="mb-1 text-muted">nov12</div>
+            <p class="mb-auto">For many, living a rich life includes a rich family life that involves connection, sharing... </p>
+            <a href="habit.php" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/1400x500/?nature,tree">
+              src="">
           </div>
         </div>
       </div>

@@ -38,13 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" align="center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
             <a class="nav-link active" href="about.php">about</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" href="contact.php">Contact us</a>
+            <a class="nav-link active" href="contactus.html">Contact us</a>
           </li>
 
         </ul>
@@ -80,7 +80,7 @@
           <button class="btn btn-warning">Web Development</button>
           <button class="btn btn-success">Tech Fun</button>
         </div>
-      </div>
+        </div>
       <div class="carousel-item">
         <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
         <div class="carousel-caption d-none d-md-block">
@@ -101,82 +101,69 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-<div class="container my-5">
-    <div class="joincomunity" style="margin-left:100px; margin-right:100px;">
-    <center>
-      <h2 style="border:3px solid #e5e5e5; border-radius:5px; padding:5px">Join Our Community</h2>
-    </center>
-</div>
-<div class="allergy">
-  <div style="margin-left:100px;">
-      <h2>Health Issues</h2>
-    
-        <div><img src="gallery/thumb/allergycare.png" style="height: 100px; width:300px;"></a>
-          <p><b>Allergy</b></p>
-          <p>Allergy is a hypersensitive reaction of the immune system produced by several origins such as environmental factors, drugs, foods....<a href="allergy.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/bloodpressure.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Blood Pressure</b></p>
-          <p>High blood pressure is a critical concern as it significantly raises the incidence of vascular disease and stroke....<a href="bloodpressure.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/dentalcare.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Dental Care</b></p>
-          <p>Proper oral health care must be encouraged in children.As a parent, you must teach them how to properly brush and floss their teeth to help keep their teeth and gums healthy for years to come....<a href="dentalcare.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/hair.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Hair Issues</b></p>
-          <p>Your hair is a reflection of your internal health. Taking proper care of your hair can completely redefine your beauty.To know about....<a href="haircare.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/jointpain.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Joint Pain</b></p>
-          <p>Joint pain is uncomfortable and frustrating, especially for those who are used to living an active life. For relief from the pain, many reach for remedies like the prescription drugs.To know about...<a href="jointpain.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/migrane.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Migrane</b></p>
-          <p>Migraine attacks can cause significant pain for hours to days and be so severe that all you can think about is finding a dark, quiet place to lie down.To know about...<a href="migrane.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/obesity.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Obesity</b></p>
-          <p>Overweight and obesity continue to plague a majority of men, women and children alike, placing them at considerable risk for heart disease, diabetes and fatty liver disease.To know about....<a href="obesity.php">Read More</a> </p>
-        </div>
-        <div><img src="gallery/thumb/skincare.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Skin Care</b></p>
-          <p>Your skin is the largest organ in your body and deserves to receive as much attention as brushing your teeth twice a day.To know about....<a href="skinissues.php">Read More</a></p>
-        </div>
-  </div>
 
-      <div class="login" style="margin-right:100px;">
-        <h2>Log In</h2>
-      <form name="login" method="post" action="communitydb.php">
-        <table class="login">
-          <tr>
-            <td>Email-Id</td>
-            <td><input type="text" name="em" id="t1" placeholder="Email-Id"  onkeyup="valid1();"/></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center"></td>
-          </tr>
-          <tr>
-            <td>Password</font></td>
-            <td><input type="password" name="pass" id="t2" placeholder="Password"   onkeyup="valid1();"/></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center"></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center"><input type="submit" value="LogIn"  class="login_button" onclick="return valid();" /></td>
-            </td>
-          </tr>
-          <tr>
-            <td align="left" style="font-size:12px"><a href="signup.php"><font color="#FF0000">Sign Up</font></a></td>
-            <td align="right"  style="font-size:12px"><a href="frgtpswrd.php"><font color="#FF0000">Forget Password</font></a></td>
-          </tr>
-        </table>
-      </form></div></div>
+  <div class="container my-5">
+    <div class="section_w940">
+    <div>
+ 
+ <h2>Joint Pain</h2>
+
+<p style="font-size:17px;">Joints form the connections between bones. They provide support and help you move. Any damage to the joints from disease or injury can interfere with your movement and cause a lot of pain.</p>
+ 
+<p style="font-size:17px;">Many different conditions can lead to painful joints, including osteoarthritis, rheumatoid arthritis, bursitis, gout, strains, sprains, and other injuries. Joint pain is extremely common. In one national survey, about one-third of adults reported having joint pain within the past 30 days. Knee pain was the most common complaint, followed by shoulder and hip pain, but joint pain can affect any part of your body, from your ankles to your shoulders. As you get older, painful joints become increasingly more common.</p>
+
+<p style="font-size:17px;">Joint pain can range from mildly irritating to debilitating. It may go away after a few weeks (acute), or last for several weeks or months (chronic). Even short-term pain and swelling in the joints can affect your quality of life. Whatever the cause of joint pain, you can usually manage it with medication, physical therapy, or alternative treatments.</p>
+
+<p style="font-size:17px;">Your doctor will first try to diagnose and treat the condition that is causing your joint pain. The goal is to reduce pain and inflammation, and preserve joint function. Treatment options include:</p>
+
+<p style="font-size:17px;"><b>Medications</b></p>
+
+
+<p style="font-size:17px;">For moderate-to-severe joint pain with swelling, an over-the-counter or prescription nonsteroidal anti-inflammatory drug (NSAID) such as aspirin, ibuprofen (Advil, Motrin), or naproxen sodium (Aleve), can provide relief. A newer generation of NSAIDs known as Cox-2 inhibitors (Celebrex) is also good for pain relief, but all except one of these drugs (Celebrex) have been removed from the market because of an increased risk of heart attack, stroke, and other cardiovascular events. NSAIDs also can have side effects, potentially increasing your risk for gastrointestinal bleeding.</p>
+
+
+<p style="font-size:17px;"><b>Other drugs that may help relieve pain include:</b></p>
+
+<nav style="font-size:17px;">
+<p>Muscle relaxants to treat muscle spasms (may be used together with NSAIDs to increase the effect)</p>
+<p>Some  antidepressants and antiepileptic drugs (which both interfere with pain signals)</p></nav>
+
+<p style="font-size:17px;"><b>Injections</b></p>
+
+<p style="font-size:17px;">For people who don't find joint pain relief from oral or topical medications, the doctor can inject a steroid medication (which may be combined with a local anesthetic) directly into the joint every three months to four months. Steroid injections are most commonly used in patients with arthritis, joint disease, or inflammation. Research still has not confirmed whether this procedure is effective, and it can have side effects; if steroid injections mask an injury, you could overuse the joint and damage it even further.</p>
+
+<p style="font-size:17px;"><b>Other injection options include:</b></p>
+
+<nav style="font-size:17px;">
+ <p>Removing fluid from the joint (and is often done in connection with a steroid injection)</p>
+ 
+<p>Injections of hyaluronan, a synthetic version of the natural joint fluid. This is used to treat osteoarthritis</p></nav>
+
+
+<p  style="font-size:17px;"><b>Physical Therapy</b></p>
+
+
+<p style="font-size:17px;">You can work with a physical therapist to strengthen the muscles around the joint, stabilize the joint, and improve your range of motion. The therapist will use techniques such as ultrasound, heat or cold therapy, electrical nerve stimulation, and manipulation.</p>
+
+<p style="font-size:17px;">If you are overweight, losing weight can relieve some of the pressure on your painful joints. Exercise is one effective way to lose weight (along with diet), but be careful to stick with low-impact exercises that won't further irritate the joint. Swimming and bicycling are among the best exercises because both allow you to exercise your joints without putting impact on them. Because water is buoyant, swimming also relieves some of the pressure on your joints</p>
+
+
 </div>
-<footer class="container bg-warning">
+   
+<div>
+
+<p style="float:right;"><img src="images/jointrelef.jpg" height="500" width="300px"/></p>
+<p>Do these exercises for join pain relief.</p>
+<p style="float:left; margin-top:50px"><img src="images/joinoil.jpg" height="240px" width="300px"  /></p>
+<p>Massage your back with this Oil and get relief from pain.</p>
+
+
+</div>    
+    </div>
+  </div>
+    <footer class="container bg-warning">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2021–2022 Nitin,<a href="index.html">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    <p>© 2021–2022 Nitin,<a href="#">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
   </footer>
 
 

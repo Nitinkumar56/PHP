@@ -38,13 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" align="center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
             <a class="nav-link active" href="about.php">about</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" href="contact.php">Contact us</a>
+            <a class="nav-link active" href="contactus.html">Contact us</a>
           </li>
 
         </ul>
@@ -80,7 +80,7 @@
           <button class="btn btn-warning">Web Development</button>
           <button class="btn btn-success">Tech Fun</button>
         </div>
-      </div>
+        </div>
       <div class="carousel-item">
         <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
         <div class="carousel-caption d-none d-md-block">
@@ -101,82 +101,67 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-<div class="container my-5">
-    <div class="joincomunity" style="margin-left:100px; margin-right:100px;">
-    <center>
-      <h2 style="border:3px solid #e5e5e5; border-radius:5px; padding:5px">Join Our Community</h2>
-    </center>
-</div>
-<div class="allergy">
-  <div style="margin-left:100px;">
-      <h2>Health Issues</h2>
-    
-        <div><img src="gallery/thumb/allergycare.png" style="height: 100px; width:300px;"></a>
-          <p><b>Allergy</b></p>
-          <p>Allergy is a hypersensitive reaction of the immune system produced by several origins such as environmental factors, drugs, foods....<a href="allergy.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/bloodpressure.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Blood Pressure</b></p>
-          <p>High blood pressure is a critical concern as it significantly raises the incidence of vascular disease and stroke....<a href="bloodpressure.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/dentalcare.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Dental Care</b></p>
-          <p>Proper oral health care must be encouraged in children.As a parent, you must teach them how to properly brush and floss their teeth to help keep their teeth and gums healthy for years to come....<a href="dentalcare.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/hair.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Hair Issues</b></p>
-          <p>Your hair is a reflection of your internal health. Taking proper care of your hair can completely redefine your beauty.To know about....<a href="haircare.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/jointpain.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Joint Pain</b></p>
-          <p>Joint pain is uncomfortable and frustrating, especially for those who are used to living an active life. For relief from the pain, many reach for remedies like the prescription drugs.To know about...<a href="jointpain.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/migrane.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Migrane</b></p>
-          <p>Migraine attacks can cause significant pain for hours to days and be so severe that all you can think about is finding a dark, quiet place to lie down.To know about...<a href="migrane.php">Read More</a></p>
-        </div>
-        <div><img src="gallery/thumb/obesity.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Obesity</b></p>
-          <p>Overweight and obesity continue to plague a majority of men, women and children alike, placing them at considerable risk for heart disease, diabetes and fatty liver disease.To know about....<a href="obesity.php">Read More</a> </p>
-        </div>
-        <div><img src="gallery/thumb/skincare.jpg" style="height: 200px; width:200px;"></a>
-          <p><b>Skin Care</b></p>
-          <p>Your skin is the largest organ in your body and deserves to receive as much attention as brushing your teeth twice a day.To know about....<a href="skinissues.php">Read More</a></p>
-        </div>
-  </div>
 
-      <div class="login" style="margin-right:100px;">
-        <h2>Log In</h2>
-      <form name="login" method="post" action="communitydb.php">
-        <table class="login">
-          <tr>
-            <td>Email-Id</td>
-            <td><input type="text" name="em" id="t1" placeholder="Email-Id"  onkeyup="valid1();"/></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center"></td>
-          </tr>
-          <tr>
-            <td>Password</font></td>
-            <td><input type="password" name="pass" id="t2" placeholder="Password"   onkeyup="valid1();"/></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center"></td>
-          </tr>
-          <tr>
-            <td colspan="2" align="center"><input type="submit" value="LogIn"  class="login_button" onclick="return valid();" /></td>
-            </td>
-          </tr>
-          <tr>
-            <td align="left" style="font-size:12px"><a href="signup.php"><font color="#FF0000">Sign Up</font></a></td>
-            <td align="right"  style="font-size:12px"><a href="frgtpswrd.php"><font color="#FF0000">Forget Password</font></a></td>
-          </tr>
-        </table>
-      </form></div></div>
+  <div class="container my-5">
+<div class="highb">
+ <div>
+  <h2>High blood pressure facts</h2>
+<p style="font-size:13px;">High blood pressure (hypertension) is designated as either essential (primary) hypertension or secondary hypertension and is defined as a consistently elevated blood pressure exceeding 140/90 mm Hg.</p><br />
+  
+ <p style="font-size:13px;">High blood pressure is called "the silent killer" because it often causes no symptoms for many years, even decades, until it finally damages certain critical organs.</p><br />
+
+    <p style="font-size:13px;">Poorly controlled high blood pressure ultimately can cause damage to blood vessels in the eye, thickening of the heart muscle and heart attacks, hardening of the arteries (arteriosclerosis), kidney failure, and strokes.</p><br />
+
+   <p style="font-size:13px;"> Most antihypertensive medications can be used alone or in combination. Some are used only in combination. Some are preferred over others in certain specific medical situations. And some are not to be used (contraindicated) in other situations</p><br />
+
+   
+   
+
+  <p  style="font-size:13px;">The goal of therapy for hypertension is to bring the blood pressure down below 140/85 in the general population and to even lower levels in diabetics, African Americans, and people with certain chronic kidney diseases</p><br />
+
+  <p  style="font-size:13px">High blood pressure (hypertension) in pregnancy can lead to preeclampsia or eclampsia (toxemia of pregnancy). Pregnant women should be monitored closely by their obstetrician for complications of high blood pressure.</p><br />
+
+
+<p style="font-size:13px;">Lifestyle adjustments in diet and exercise and compliance with medication regimes are important factors in determining the outcome for people with hypertension.</p><br />
+
+
+<p style="font-size:13px">High salt intake, obesity, lack of regular exercise, excessive alcohol or coffee intake, and smoking may all adversely affect the outlook for the health of an individual with high blood pressure.</p><br />
+
+
+<h2>Low Blood Pressure</h2>
+
+<p style="font-size:13px ;"> Any blood pressure that is below the normal expected for an individual in a given environment. Low blood pressure is also referred to as hypotension. </p><br />
+
+
+
+<p style="font-size:13px">Low blood pressure is a relative term because the blood pressure normally varies greatly with activity, age, medications, and underlying medical conditions. </p><br />
+   
+
+	
+<p style="font-size:13px;">Low blood pressure can result from conditions of the nervous system, conditions that do not begin in the nervous system, and drugs. /p><br />
+
+
+<p style="font-size:13px">Neurologic conditions that can lead to low blood pressure include changing position from lying to more vertical (postural hypotension), stroke, shock, lightheadedness after urinating or defecating, Parkinson's disease, neuropathy and simply fright. </p><br />
+
+
+ 
+<p style="font-size:13px;">Nonneurologic conditions that can cause low blood pressure include bleeding, infections, dehydration, heart disease, adrenal insufficiency, pregnancy, prolonged bed rest, poisoning, toxic shock syndrome, and blood transfusion reactions. </p><br />
+
+<p style="font-size:13px">Hypotensive drugs include blood pressure drugs, diuretics (water pills), heart medications (especially calcium antagonists-nifedipine/PROCARDIA, beta blockers-propranolol/INDERAL and others), depression medications (such as amitriptyline/ELAVIL), and alcohol. </p>
 </div>
-<footer class="container bg-warning">
+    
+<div>
+<p style="margin-top:50px"><img src="images/highb.jpg" height="300px" width="300px" /></p>
+<p>Apply above giving tips in your daily routine and get relief from high blood pressure.</p>
+
+<p style="margin-top:50px"><img src="images/blood_pressure_chart.jpg" height="300px" width="300px" /></p>
+<p>Above chart tells about your blood pressure category.</p>
+</div>  
+ </div>
+  </div>
+ <footer class="container bg-warning">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2021–2022 Nitin,<a href="index.html">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    <p>© 2021–2022 Nitin,<a href="#">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
   </footer>
 
 
