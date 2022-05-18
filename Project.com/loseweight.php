@@ -24,6 +24,7 @@
       width: 150px;
     }
   </style>
+  
 </head>
 
 <body>
@@ -103,7 +104,7 @@
   </div>
 
   <div class="container my-5">
-        <div class="fast">
+        <div class="fast d-flex">
             <div class="how to">
     <h2>How to Lose Weight Fast</h2>
     <p>If you burn 500 more calories than you eat every day for a week, you should lose about 1-2 pounds.<br />
@@ -122,7 +123,7 @@
     <img src="gallery/thumb/greentea.jpg" style="height:250px; width:250px"  />
     <p><u><b style="color:#006600">Green tea</b></u> helps with your body weight loss. Green tea burns fat and boosts your metabolism rate naturally. It can help you burn up to 70 calories in just one day. That translates to 7 pounds in one year.</p>
     </div></div>
-        <div class="fast">
+        <div class="fast d-flex">
             <div class="diets">
     <h2>Diets for Fast Weight Loss</h2>
     <p>Dansinger recommends eating a diet that minimizes starches, added sugars, and animal fat from meat and dairy foods. For rapid weight loss, he recommends focusing  on fruits, veggies, egg whites, soy products, skinless poultry breasts, fish, shellfish, nonfat dairy foods, and 95% lean meat.<br />
@@ -159,7 +160,7 @@
     <img src="gallery/thumb/fruitsh.jpg" style="height: 350px;" />
     <p><b style="color:#FF9900"><u>Eating a diet</u></b> rich in fruits as part of an overall healthy diet may reduce risk for heart disease, including heart attack and stroke.Diets rich in foods containing fiber, such as some vegetables and fruits, may reduce the risk of heart disease, obesity, and type 2 diabetes.</p>
             </div></div>
-    <div class="fast">
+    <div class="fast d-flex">
         <div class="exercisingfor">
     <p>
     <h2>Exercising for Fast Weight Loss</h2>

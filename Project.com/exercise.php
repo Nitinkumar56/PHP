@@ -102,7 +102,7 @@
     </button>
   </div>
 <div class="container my-5">
-    <div class="classification">
+    <div class="classification d-flex">
     <div style="width: 50%;">
     <h2>Classification</h2>
   <hr>

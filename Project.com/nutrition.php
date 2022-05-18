@@ -102,7 +102,7 @@
     </button>
   </div>
 <div class="container my-5">
-<div class="nutrition">
+<div class="nutrition d-flex">
 <div class="whatis" style="width: 50%;">
 <p><b>What Is Nutrition? Why Is Nutrition Important?</b></p>
       <p style="font-size:17px;"><b>Nutrition </b>, nourishment, or aliment, is the supply of materials - food - required by organisms and cells to stay alive. In science and human medicine, nutrition is the science or practice of consuming and utilizing foods.</p>

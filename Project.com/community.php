@@ -107,7 +107,7 @@
       <h2 style="border:3px solid #e5e5e5; border-radius:5px; padding:5px">Join Our Community</h2>
     </center>
 </div>
-<div class="allergy">
+<div class="allergy d-flex">
   <div style="margin-left:100px;">
       <h2>Health Issues</h2>
     

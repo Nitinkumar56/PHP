@@ -123,7 +123,7 @@
 <h2>4. Support family members in leading lives with purpose.</h2>
 <p>One of the greatest fears for many wealth creators is that their success will enable future generations to become dependent and live off the family money without becoming contributing members of society.  Successful legacy families are very intentional in supporting each member of the family to live a life with purpose and meaning. The family isn’t threatened by differences in personality, thought or temperament.  Instead, it values the differences and sees them as contributing to the strength of the family.</p>
 
-<h2>5. Prepare heirs to manage wealth in ways to foster well-being.<h2>
+<h2>5. Prepare heirs to manage wealth in ways to foster well-being.</h2>
 <p>Families that flourish do active financial parenting with both young and adult children. When children are small, parents teach them the basics of money skills: setting aside money for saving, spending, and sharing.  As the children approach their teen years, the parents begin teaching them how to earn money and keep a budget.  They allow and encourage adult children to grow up, and they seek out advisors to teach them about wealth management.  Most importantly, members of older generations model responsible stewardship by educating themselves financially and being actively involved in managing the family money.</p>
 
 <h2>6. Practice Skillful Communication.</h2>

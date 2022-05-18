@@ -103,7 +103,7 @@
   </div>
 
     <div class="container my-5">
-    <div class="keephealthy">
+    <div class="keephealthy d-flex">
         <div>
     <h2>Keeping Yourself Healthy</h2>
       <p style="font-size:13px;"><u style="font-size:14px"><b>1. Eat Balanced Food:-</b></u>Try to follow the food pyramid. Eat a lot of fresh fruits of vegetables, some whole grains and fiber, a little bit of dairy, a little bit of meat, and very little sugar and fat.</p>
