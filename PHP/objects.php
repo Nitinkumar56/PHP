@@ -11,7 +11,7 @@
     class Person {
         public $age;
         function speak() {
-            echo "Hello !";
+            echo "Hello";
         }
     }
     $p1 = new Person();
