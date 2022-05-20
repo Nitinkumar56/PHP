@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" align="center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p11 rounded-pill mx-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item p11 rounded-pill mx-2">
             <a class="nav-link active" href="about.php">about</a>
@@ -187,7 +187,7 @@
   </div>
     <footer class="container bg-warning">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2021–2022 Nitin,<a href="#">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    <p>© 2021–2022 Nitin,<a href="index.php">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
   </footer>
 
 
