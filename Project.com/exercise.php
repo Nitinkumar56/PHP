@@ -59,10 +59,14 @@
         aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/exercise/a (1).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to iCoder</h2>
           <p>Technology News, Development and Treads</p>
@@ -72,7 +76,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/exercise/a (2).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>The Best Coding Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -82,7 +86,27 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/exercise/a (3).jpg" class="d-block w-100" height="630" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Award winning Blog</h2>
+          <p>Technology News, Development and Treads</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-warning">Web Development</button>
+          <button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/exercise/a (4).jpg" class="d-block w-100" height="630" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Award winning Blog</h2>
+          <p>Technology News, Development and Treads</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-warning">Web Development</button>
+          <button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/exercise/a (5).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Award winning Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -101,7 +125,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-<div class="container my-5">
+<div class="container my-4">
     <div class="classification d-flex">
     <div style="width: 50%;">
     <h2>Classification</h2>

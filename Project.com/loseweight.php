@@ -63,7 +63,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/loseweight/a (1).jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to iCoder</h2>
           <p>Technology News, Development and Treads</p>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/loseweight/a (2).jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>The Best Coding Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -83,7 +83,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/loseweight/a (3).jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Award winning Blog</h2>
           <p>Technology News, Development and Treads</p>

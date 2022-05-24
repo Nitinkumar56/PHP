@@ -59,10 +59,12 @@
         aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="head/blood/a (1).jpg" class="d-block w-100" height="620" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to iCoder</h2>
           <p>Technology News, Development and Treads</p>
@@ -72,7 +74,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="head/blood/a (2).jpg" class="d-block w-100" height="620" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>The Best Coding Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -82,7 +84,17 @@
         </div>
         </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="head/blood/a (3).jpg" class="d-block w-100" height="620" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Award winning Blog</h2>
+          <p>Technology News, Development and Treads</p>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-warning">Web Development</button>
+          <button class="btn btn-success">Tech Fun</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="head/blood/a (4).jpg" class="d-block w-100" height="620" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Award winning Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -103,7 +115,7 @@
   </div>
 
   <div class="container my-5">
-<div class="highb">
+<div class="highb d-flex">
  <div>
   <h2>High blood pressure facts</h2>
 <p style="font-size:13px;">High blood pressure (hypertension) is designated as either essential (primary) hypertension or secondary hypertension and is defined as a consistently elevated blood pressure exceeding 140/90 mm Hg.</p><br />

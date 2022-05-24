@@ -62,7 +62,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/keephealthy/a.jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to iCoder</h2>
           <p>Technology News, Development and Treads</p>
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/keephealthy/a (2).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>The Best Coding Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/keephealthy/a (1).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Award winning Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -106,27 +106,27 @@
     <div class="keephealthy d-flex">
         <div>
     <h2>Keeping Yourself Healthy</h2>
-      <p style="font-size:13px;"><u style="font-size:14px"><b>1. Eat Balanced Food:-</b></u>Try to follow the food pyramid. Eat a lot of fresh fruits of vegetables, some whole grains and fiber, a little bit of dairy, a little bit of meat, and very little sugar and fat.</p>
-      <p style="font-size:13px;"><u style="font-size:14px"><b>2. Regular Exercise:-</b></u>To exercise you can run, do sit-ups, push-ups, etc., lift weights, play DDR, or walk briskly around your neighborhood.</p>
-      <p style="font-size:13px;"><u style="font-size:14px"><b>3. Establish regular sleep patterns:-</b></u> Health care professionals recommend getting eight hours of sleep daily, but it differs from person to person. It is best to get at least seven hours of sleep a day because lack of sleep can harm not only your physical health but your mental health. Sleep deprivation can cause lapses in concentration. To establish a regular sleep pattern, go to bed at the same time each night and wake up at the same time each morning. It may seem hard at first, but it will get easier after you've done it for a while.</p>
-      <p style="font-size:13px;"><u style="font-size:14px"><b>4. Keep a positive attitude :-</b></u> Instead of being pessimistic and thinking you can't achieve your goals, be positive and thrive on your challenges</p>
-      <p style="font-size:13px;"><u style="font-size:14px"><b>5. Mental Fitness:-</b></u>You must assess your emotional health regularly. Try to take a break from your concern and worries. Try to feel free. Factors involving mental fitness are: -
+      <p><u><b>1. Eat Balanced Food:-</b></u>Try to follow the food pyramid. Eat a lot of fresh fruits of vegetables, some whole grains and fiber, a little bit of dairy, a little bit of meat, and very little sugar and fat.</p>
+      <p><u><b>2. Regular Exercise:-</b></u>To exercise you can run, do sit-ups, push-ups, etc., lift weights, play DDR, or walk briskly around your neighborhood.</p>
+      <p><u><b>3. Establish regular sleep patterns:-</b></u> Health care professionals recommend getting eight hours of sleep daily, but it differs from person to person. It is best to get at least seven hours of sleep a day because lack of sleep can harm not only your physical health but your mental health. Sleep deprivation can cause lapses in concentration. To establish a regular sleep pattern, go to bed at the same time each night and wake up at the same time each morning. It may seem hard at first, but it will get easier after you've done it for a while.</p>
+      <p><u><b>4. Keep a positive attitude :-</b></u> Instead of being pessimistic and thinking you can't achieve your goals, be positive and thrive on your challenges</p>
+      <p><u><b>5. Mental Fitness:-</b></u>You must assess your emotional health regularly. Try to take a break from your concern and worries. Try to feel free. Factors involving mental fitness are: -
       <p>-Mental Fitness</p>
       <p>-Emotional Fitness</p>
       <p>-Relaxation</p>
       <p>-Coping with Stress</p>
       <p>-Facing Difficulties</p>
       <p>-Overcoming Addictions</p>
-      <p style="font-size:15px;"><u style="font-size:16px"><b>6.Develop social network and be with friends :-</b></u> Have fun with them, spend time with them, and talk with them, but make sure you steer away from gossip and slander. As long as you keep yourself free from negative talk, being with people satisfies the soul.</p>
-      <p><u style="font-size:16px"><b>Conclusion</b></u></p>
-      <nav style="font-size:15px;">
+      <p><u><b>6.Develop social network and be with friends :-</b></u> Have fun with them, spend time with them, and talk with them, but make sure you steer away from gossip and slander. As long as you keep yourself free from negative talk, being with people satisfies the soul.</p>
+      <p><u><b>Conclusion</b></u></p>
+      <nav>
         <p>
         <li>Exercise at least three or four days a week.</li>
         </p>
         <p>
         <li>Get your body accustomed to healthy food, and eat moderately!</li>
         </p>
-        <p style="font-size:13px;">
+        <p>
         <li>Sleep at least seven to eight hours every night, and go to bed and wake up at the same time each day.</li>
         </p>
         <p>
@@ -151,7 +151,7 @@
     </div>
     <div>
       <p style="color:#009900; margin-top:50px">Plan Your Daily Diet Schedule As Follows: </p>
-      <img src="gallery/thumb/dailydiet.jpg" style="height: 600px; width:400px;"></div> </div>
+      <img src="gallery/thumb/dailydiet.jpg" style="height: 700px; width:550px;"></div> </div>
     </div>
     <footer class="container bg-warning">
     <p class="float-end"><a href="#">Back to top</a></p>
