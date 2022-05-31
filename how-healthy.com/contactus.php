@@ -94,7 +94,7 @@ function clearText(field) {
       <iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?hl=en&amp;q=Malerkotla,punjab&amp;ie=UTF8&amp;hq=&amp;hnear=Maler+Kotla,+Sangrur,+Punjab,+India&amp;t=m&amp;z=14&amp;ll=30.526381,75.878464&amp;output=embed"></iframe>
       <br />
       <br />
-      <p style="font-size:14px"><b>Email-Id:</b>&nbsp;anjalisharma1325476@gmail.com</p>
+      <p style="font-size:14px"><b>Email-Id:</b>&nbsp;nk2342001@gmail.com</p>
       <div class="cleaner_h40"></div>
     </div>
   </div>

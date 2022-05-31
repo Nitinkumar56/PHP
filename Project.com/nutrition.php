@@ -24,13 +24,102 @@
       width: 150px;
     }
   </style>
+  <script language="javascript" type="text/javascript">
+function clearText(field) {
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+<script language="JavaScript">
+//
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+if(weight > 0 && height > 0){ 
+var finalBmi = weight/(height/100*height/100)
+document.bmiForm.bmi.value = finalBmi
+if(finalBmi < 18.5){
+document.bmiForm.meaning.value = "That you are too thin."
+}
+if(finalBmi > 18.5 && finalBmi < 25){
+document.bmiForm.meaning.value = "That you are healthy."
+}
+if(finalBmi > 25){
+document.bmiForm.meaning.value = "That you have overweight."
+}
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+//
+</script>
+<style type="text/css">
+<!--
+#sponsorAdDiv {position:absolute; height:1; width:1px; top:0; left:0;}
+-->
+</style>
+<script type="text/javascript">
+
+/******************************************
+* DHTML Ad Box (By Matt Gabbert at http://www.nolag.com)
+* Visit http://www.dynamicdrive.com/ for full script
+* This notice must stay intact for use
+******************************************/
+
+adTime=10;  // seconds ad reminder is shown
+chanceAd=1; // ad will be shown 1 in X times (put 1 for everytime)
+
+var ns=(document.layers);
+var ie=(document.all);
+var w3=(document.getElementById && !ie);
+var calunit=ns? "" : "px"
+adCount=0;
+function initAd(){
+	if(!ns && !ie && !w3) return;
+	if(ie)		adDiv=eval('document.all.sponsorAdDiv.style');
+	else if(ns)	adDiv=eval('document.layers["sponsorAdDiv"]');
+	else if(w3)	adDiv=eval('document.getElementById("sponsorAdDiv").style');
+	randAd=Math.ceil(Math.random()*chanceAd);
+        if (ie||w3)
+        adDiv.visibility="visible";
+        else
+        adDiv.visibility ="show";
+	if(randAd==1) showAd();
+}
+function showAd(){
+if(adCount<adTime*10){adCount+=1;
+	if (ie){documentWidth  =truebody().offsetWidth/2+truebody().scrollLeft-20;
+	documentHeight =truebody().offsetHeight/2+truebody().scrollTop-20;}	
+	else if (ns){documentWidth=window.innerWidth/2+window.pageXOffset-20;
+	documentHeight=window.innerHeight/2+window.pageYOffset-20;} 
+	else if (w3){documentWidth=self.innerWidth/2+window.pageXOffset-20;
+	documentHeight=self.innerHeight/2+window.pageYOffset-20;} 
+	adDiv.left=documentWidth-200+calunit;adDiv.top =documentHeight-200+calunit;
+	setTimeout("showAd()",100);}else closeAd();
+}
+function closeAd(){
+if (ie||w3)
+adDiv.display="none";
+else
+adDiv.visibility ="hide";
+}
+
+function truebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+onload=initAd;
+//End-->
+</script>
+
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-warning">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" height="70"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <a class="navbar-brand" href="# "><img src="img/logo.png" height="70"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent "
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,18 +140,18 @@
       </div>
   </nav>
 
-  <div id="carouselExampleCaptions" class="carousel slide  .carousel-fade" data-bs-ride="carousel">
+  <div id="carouselExampleCaptions" class="carousel slide  .carousel-fade " data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      <button type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+      <button type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide-to="1"
         aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+      <button type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/nutrition/a (1).jpg " class="d-block w-100" height="570" alt="... ">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to iCoder</h2>
           <p>Technology News, Development and Treads</p>
@@ -72,7 +161,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/nutrition/a (2).jpg " class="d-block w-100" height="570" alt="... ">
         <div class="carousel-caption d-none d-md-block">
           <h2>The Best Coding Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -82,7 +171,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="img/wraper.jpg" class="d-block w-100" height="500" alt="...">
+        <img src="img/nutrition/a (3).jpg " class="d-block w-100" height="570" alt="... ">
         <div class="carousel-caption d-none d-md-block">
           <h2>Award winning Blog</h2>
           <p>Technology News, Development and Treads</p>
@@ -92,11 +181,11 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -140,9 +229,10 @@
       <p style="font-size:17px;"><b>5) Drink Your Milk</b></p>
       <p style="font-size:17px;">Nonfat and low fat milk and yogurt are not only excellent sources of bone-strengthening calcium and vitamin D but also potassium, which can help prevent high blood pressure. Most Americans are falling short of all three of these nutrients, which can wreak havoc with their bones and blood pressure.   To meet the recommended three servings of dairy daily, add low fat milk to your morning java, add a slice of cheese to your lunchtime sandwich, and reach for a vitamin D fortified nonfat yogurt for a daily snack.  Since full-fat cheese is a major source of heart-unhealthy saturated fat in the American diet, choose only reduced or low fat varieties. </p>
 </div>
-      <div class="facebook" style="margin-top: 30px;"> <a href="https://www.facebook.com/pages/How-Healthy/284470868355664?ref=hl"> <img src="gallery/thumb/Facebook.jpg" alt="Like us on facebook" height="50px" width="200px" style="border-radius:6px" /> </a>
-      <form>
-        <table style="border:2px solid black">
+      <div class="facebook mx-5"> <a href="https://www.facebook.com/pages/How-Healthy/284470868355664?ref=hl"> <img src="gallery/thumb/Facebook.jpg" alt="Like us on facebook" height="50px" width="200px" style="border-radius:6px" /> </a><div class=my-5></div>
+      <form name="bmiForm" class="uu border" style="background-color:#e5e5e5 ">
+        <!--p>Calculate Your BMI Here</p>-->
+        <table style="padding:5px">
           <tr>
             <th colspan="2">Calculate Your BMI Here</th>
           </tr>
@@ -155,7 +245,7 @@
             <td><input type="text" name="height" size="10"></td>
           </tr>
           <tr>
-            <td colspan="2" align="center"><input type="button" value="Calculate BMI" onClick="calculateBmi()" style="border:none; background-color:#990000; color:#FFFFFF; padding:5px; border-radius:5px; margin:7px 0 7px 0"></td>
+            <td colspan="2" align="center"><input type="button" value="Calculate BMI" onClick="calculateBmi()" style="border:none; background-color:#990000; color:#FFFFFF ; padding:5px; border-radius:5px; margin:7px 0 7px 0"></td>
           </tr>
           <tr>
             <td> Your BMI: </td>
@@ -166,15 +256,38 @@
             <td><input type="text" name="meaning" size="25"></td>
           </tr>
           <tr>
-            <td colspan="2" align="center"><input type="reset" value="Reset" style="border:none; background-color:#990000; color:#FFFFFF; padding:5px; border-radius:5px; margin-top:7px"/></td>
+            <td colspan="2" align="center"><input type="reset" value="Reset" style="border:none; background-color:#990000; color:#FFFFFF ; padding:5px; border-radius:5px; margin-top:7px"/></td>
         </table>
-</form>
-      <p><img src="gallery/thumb/boyfruits.jpg" style="height:250px; width:250px;" style="border:3px solid #e5e5e5; border-radius:5px"/></p>
+      </form>
+      <div class="ad">
+        <div id="sponsorAdDiv" style="visibility:hidden">
+          <table width="350px" height="250px" style="background-color:#008000 ">
+            <tr>
+              <td><table width="345px" height="245px" bgcolor="#F0FFF0 ">
+                  <tr>
+                    <td align="center" valign="middle"><!--*****EDIT THIS MESSAGE*****-->
+                      <A HREF="http://www.amazon.com/exec/obidos/redirect-home/wa0c?tag-id=wa0c&placement=home-btn-100x70.gif&site=amazon"> <IMG SRC="http://www.associmg.com/assoc/us/home-btn-100x70.gif?tag-id=wa0c"></A>
+                      <p><b>Please take time to show your support<br>
+                        for this site by visiting one<br>
+                        of our sponsors during this<br>
+                        brief intermission.</b> </p>
+                      <p><A HREF="http://www.amazon.com/exec/obidos/redirect-home/wa0c?tag-id=wa0c&placement=home-logo-130x60b.gif&site=amazon"> <IMG SRC="http://www.associmg.com/assoc/us/home-logo-130x60b.gif?tag-id=wa0c"></A></p>
+                      <p>(This announcement will close shortly) <br>
+                        <!--*****EDIT THE ABOVE MESSAGE*****-->
+                    </td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class=my-5></div>
+      <p><img src="gallery/thumb/boyfruits.jpg" style="height:250px; width:250px;" style="border:3px solid #e5e5e5 ; border-radius:5px"/></p>
 </div></div>
 </div>
 <footer class="container bg-warning">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>© 2021–2022 Nitin,<a href="index.php">how-healthy.com</a> Inc. · <a href="#">Privacy</a> . <a href="#">Terms</a></p>
+    <p class="float-end"><a href="# ">Back to top</a></p>
+    <p>© 2021–2022 Nitin,<a href="index.php">how-healthy.com</a> Inc. · <a href="# ">Privacy</a> . <a href="# ">Terms</a></p>
   </footer>
 
 
