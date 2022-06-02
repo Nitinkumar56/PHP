@@ -68,51 +68,51 @@
       <div class="carousel-item active">
         <img src="img/exercise/a (1).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Wellcome to iCoder</h2>
-          <p>Technology News, Development and Treads</p>
-          <button class="btn btn-danger">Technology</button>
-          <button class="btn btn-warning">Web Development</button>
-          <button class="btn btn-success">Tech Fun</button>
+          <h2></h2>
+          <p></p>
+          <button class="btn btn-danger"></button>
+          <button class="btn btn-warning"></button>
+          <button class="btn btn-success"></button>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/exercise/a (2).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>The Best Coding Blog</h2>
-          <p>Technology News, Development and Treads</p>
-          <button class="btn btn-danger">Technology</button>
-          <button class="btn btn-warning">Web Development</button>
-          <button class="btn btn-success">Tech Fun</button>
+          <h2></h2>
+          <p></p>
+          <button class="btn btn-danger"></button>
+          <button class="btn btn-warning"></button>
+          <button class="btn btn-success"></button>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/exercise/a (3).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Award winning Blog</h2>
-          <p>Technology News, Development and Treads</p>
-          <button class="btn btn-danger">Technology</button>
-          <button class="btn btn-warning">Web Development</button>
-          <button class="btn btn-success">Tech Fun</button>
+          <h2></h2>
+          <p></p>
+          <button class="btn btn-danger"></button>
+          <button class="btn btn-warning"></button>
+          <button class="btn btn-success"></button>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/exercise/a (4).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Award winning Blog</h2>
-          <p>Technology News, Development and Treads</p>
-          <button class="btn btn-danger">Technology</button>
-          <button class="btn btn-warning">Web Development</button>
-          <button class="btn btn-success">Tech Fun</button>
+          <h2></h2>
+          <p></p>
+          <button class="btn btn-danger"></button>
+          <button class="btn btn-warning"></button>
+          <button class="btn btn-success"></button>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/exercise/a (5).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Award winning Blog</h2>
-          <p>Technology News, Development and Treads</p>
-          <button class="btn btn-danger">Technology</button>
-          <button class="btn btn-warning">Web Development</button>
-          <button class="btn btn-success">Tech Fun</button>
+          <h2></h2>
+          <p></p>
+          <button class="btn btn-danger"></button>
+          <button class="btn btn-warning"></button>
+          <button class="btn btn-success"></button>
         </div>
       </div>
     </div>
