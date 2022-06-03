@@ -11,19 +11,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <title>how-healthy.com</title>
-  <style>
-    .p11:hover{
-      background-color:rgb(255, 0, 0);
-      font-size:30px;
-      font-family:bookman;
-    }
-    .p11{
-      font-size:29px;
-      font-family:palatino;
-      
-      width: 150px;
-    }
-  </style>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -79,28 +67,28 @@
         <img src="head/dental/a1.jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to healthy</h2>
-          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
+          <p class="pa" style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
         </div>
       <div class="carousel-item">
         <img src="head/dental/a2.jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to healthy</h2>
-          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
+          <p class="pa" style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="head/dental/a3.jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to healthy</h2>
-          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
+          <p class="pa" style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="head/dental/a4.jpg" class="d-block w-100" height="600" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h2>Wellcome to healthy</h2>
-          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
+          <p class="pa" style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
       </div>
     </div>
