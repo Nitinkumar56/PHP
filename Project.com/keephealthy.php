@@ -64,31 +64,22 @@
       <div class="carousel-item active">
         <img src="img/keephealthy/a.jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2></h2>
-          <p></p>
-          <button class="btn btn-danger"></button>
-          <button class="btn btn-warning"></button>
-          <button class="btn btn-success"></button>
+          <h2>Wellcome to healthy</h2>
+          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/keephealthy/a (2).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2></h2>
-          <p></p>
-          <button class="btn btn-danger"></button>
-          <button class="btn btn-warning"></button>
-          <button class="btn btn-success"></button>
+          <h2>Wellcome to healthy</h2>
+          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/keephealthy/a (1).jpg" class="d-block w-100" height="630" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2></h2>
-          <p></p>
-          <button class="btn btn-danger"></button>
-          <button class="btn btn-warning"></button>
-          <button class="btn btn-success"></button>
+          <h2>Wellcome to healthy</h2>
+          <p style="font-size:25px; color:black; "><b>You can't buy good health But you can buy good health information.</b></p>
         </div>
       </div>
     </div>
