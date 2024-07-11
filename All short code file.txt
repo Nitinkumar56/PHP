@@ -1,0 +1,1865 @@
+// Video popup
+<div class="banner-botto-content play-btn__text-wrap">
+	  <p>Or watch a 30-second video</p>
+	</div>
+	
+	<div class="popup-video-main" style="display: none;">
+	  <div class="video-closeBtn">
+		<svg width="40" height="40" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4"></path></svg>
+	  </div>
+	  <div class="play-video">
+		<video id="video" width="320" height="240" controls="">
+		  <source src="https://www.growth.legal/hubfs/Growth%20Legal/video/03.04.2024_LGM%20Personal%20Injury_FINAL.mp4" type="video/mp4">
+		  <source src="movie.ogg" type="video/ogg">
+		  Your browser does not support the video tag.
+		</video>
+	  </div>
+	</div>
+	
+	
+$("document").ready((function(){$(".play-btn__text-wrap").click((function(){$("body").addClass("show_pop__Up"),$(".popup-video-main").css("display","block"),document.getElementById("video").play()})),$(".video-closeBtn").click((function(){$(".popup-video-main").hide(".popup-video-main"),$("body").removeClass("show_pop__Up"),document.getElementById("video").pause()}))}));
+
+=================================================================
+
+// Counter
+var module_170959673683=function(){var count=0;$(document).scroll((function(){console.log("$(document).scrollTop()"+$(document).scrollTop()),console.log("ff"+$(".counter-main-wrap").position().top+$(".counter-main-wrap").outerHeight()),$(document).scrollTop()>=$(".counter-main-wrap").position().top-200&&$(document).scrollTop()<$(".counter-main-wrap").position().top+$(".counter-main-wrap").outerHeight()&&(console.log("cc"+count),0==count&&$(".stat-number").each((function(){var size=$(this).text().split(".")[1]?$(this).text().split(".")[1].length:0;$(this).prop("Counter",0).animate({Counter:$(this).text()},{duration:5e3,step:function(func){$(this).text(parseFloat(func).toFixed(size))}})})),count+=1,console.log("ccount"+count))}))}();
+
+================================================================
+
+// Hubspot video popup to play
+
+($(".play-btn-text-wrap").click((function(){
+$("body").addClass("open-popup-video"),
+$(".video-popup").show(),
+$(".popup-video-main").html($(".popup-video-text").html())})),
+void $(".video-closeBtn").click((function(){
+$(".popup-video-main").html(""),
+$("body").removeClass("open-popup-video"),
+$(".video-popup").hide()
+}
+)
+)
+);
+
+===============================================================
+
+// header-scroll sticky
+
+<script>
+$(document).ready(function(){
+$(window).scroll(function(){
+var $body = $("body");
+
+var windowpos = $(window).scrollTop();
+// console.log(windowpos);
+if (windowpos > 96) {
+$body.addClass("small-header");
+} else {
+$body.removeClass("small-header");	
+}
+});
+});
+</script>
+========================================================================
+
+//Add No-index in pages
+
+<meta name="robots" content="noindex">
+
+===================================================================
+// popup
+$('.popUp_therapeers').click(function() {
+$(this).next('.therapeers_popUp--show').show();
+$('body').addClass('show_therapeers-PoPUp');
+});
+
+$('.close-Btn').click(function(){
+$(this).closest('.therapeers_popUp--show').hide();
+$('body').removeClass('show_therapeers-PoPUp');
+});
+
+
+
+//body class not click on body div
+
+$(document).ready(function() {
+// Add event handler for button click
+$('.btn').on('click', function(event) {
+// Add class "active" to body
+$('body').addClass('active');
+// Prevent event bubbling to body
+event.stopPropagation();
+});
+
+// Add event handler for body click
+$('body').on('click', function(event) {
+// Check if the clicked element is not the button or inside the button
+if (!$(event.target).closest('.mobile_view-content').length) {
+// Remove class "active" from body
+$('body').removeClass('active');
+}
+});
+});
+
+================================================================
+
+
+// Video Play and pause if multiple
+
+var videos = document.getElementsByTagName('video');
+for (var i = 0; i < videos.length; i++) {
+videos[i].addEventListener('play', function() {
+slider.slick('slickPause');
+});
+videos[i].addEventListener('pause', function() {
+slider.slick('slickPlay');
+});
+videos[i].addEventListener('play', function(event) {
+for (var j = 0; j < videos.length; j++) {
+if (videos[j] !== event.target) {
+videos[j].pause();
+}
+}
+});
+}
+
+==============================================================
+
+// Trasparent header after banner scroll
+/** 
+* Small Header on Page Scroll
+*/
+$(window).scroll(function(){
+var $body = $("body");
+var bannerHeight = $('.banner-section-outer').height(); // Assuming your banner has a class 'banner'
+
+var windowpos = $(window).scrollTop();
+console.log(windowpos);
+if (windowpos > bannerHeight + 200) { // Adjusted condition to account for banner height
+$body.addClass("small-header");
+} else {
+$body.removeClass("small-header");  
+}
+});
+
+
+
+=====================================================================================
+
+// header skip content hide and show
+// Variables to track the number of times the Tab key has been pressed and whether the class has been added
+var tabKeyPressCount = 0;
+var classAdded = false;
+
+$(document).on('keydown', function (e) {
+// Check if the pressed key is the Tab key (key code 9)
+if (e.which === 9) {
+// Increment the counter
+tabKeyPressCount++;
+
+// Show the div on every Tab key press
+$('.myDiv_header').show();
+
+// Add the additional class after the second Tab key press
+if (tabKeyPressCount === 2 && !classAdded) {
+$('.myDiv_header').removeClass('myDiv_header');
+$('#myDiv').addClass('additionalClass');
+classAdded = true;
+}
+
+// Hide the element with the additional class
+$('.additionalClass').hide();
+}
+});
+
+
+//faq section
+===================================================================================
+function hsOnReadyLoadFAQ() { 
+var $accordion = $('.accordion');
+
+// Initially hide all accordion content
+$accordion.find('.accordion_content').hide();
+// Initially display the accordion content with .expanded class
+$accordion.find('.accordion_group.expanded .accordion_content').show();
+
+$accordion.find('.accordion_header').click(function(){
+
+// Hide the displayed sibling accordion content so only one appears at a time
+$accordion.find(".accordion_header").not(this).parent(".accordion_group.expanded").removeClass('expanded').children('.accordion_content').stop(true,true).slideUp();
+
+if(!$(this).parent('.accordion_group').hasClass('expanded')){
+// Display the accordion content if it is not displayed
+$(this).parent(".accordion_group").addClass('expanded').children('.accordion_content').stop(true,true).slideDown();
+}
+else{
+// Hide the accordion content if it is displayed
+$(this).parent(".accordion_group").removeClass('expanded').children('.accordion_content').stop(true,true).slideUp();
+}
+});
+} 
+
+if (document.readyState === "complete" ||
+(document.readyState !== "loading" && !document.documentElement.doScroll)
+) {
+hsOnReadyLoadFAQ();
+} else {
+document.addEventListener("DOMContentLoaded", hsOnReadyLoadFAQ);
+}
+
+=====================================================================================================================
+// POST NEXT AND PREVIOUS
+
+<div class="post-pagination">
+<div class="prev-post">
+{% if content.previous_post_slug %}
+<div class="nav-text"><a href="/{{ content.previous_post_slug }}">Previous</a>
+</div>
+{% endif %}
+</div>
+<div class="next-post">
+{% if content.next_post_slug %}
+<div class="nav-text"><a href="/{{ content.next_post_slug }}">Next</a>
+</div>
+{% endif %}
+</div>
+</div>
+
+===============================================================================
+// Padding in dnd area
+{% dnd_section 
+padding={
+"default": {
+"top": 0,
+"right": 0,
+"bottom": 0,
+"left": 0
+},
+"mobile": {
+"top": 80,
+"right": 20,
+"bottom": 80,
+"left": 20
+}
+}
+%}
+
+
+// ADD MODULES IN TEMPLATES
+
+{% dnd_section %}
+
+{% dnd_column
+offset=0,
+width=12,
+%}
+{% dnd_row %}
+
+{% dnd_module path="/San Diego Wave FC/modules/custom module/Banner Module.module" width="12" %}
+{% end_dnd_module %}
+
+{% end_dnd_row %}
+
+
+{% end_dnd_column %}
+
+{% end_dnd_section %}
+
+
+{% dnd_section full_width="true" %}
+{% dnd_column  offset=0,  width=12,%}
+{% dnd_row %}
+{% dnd_module  "module_16915715385887" path="/Budgetease Theme/modules/custom-modules/banner-module-with-menu", label="banner-module-with-menu" %}{% end_dnd_module %}
+{% end_dnd_row %}
+{% end_dnd_column %}
+{% end_dnd_section %}
+============================================================================
+// ADD CLASS ON SCROLL AND REMOVE
+
+$(document).ready(function() {
+// Function to add class on scroll
+function addClassOnScroll() {
+var scrollPosition = $(window).scrollTop();
+
+if (scrollPosition > 0) {
+$('body').addClass('scrolled');
+} else {
+$('body').removeClass('scrolled');
+}
+}
+
+// Call the function on page load
+addClassOnScroll();
+
+// Call the function on scroll
+$(window).scroll(function() {
+addClassOnScroll();
+});
+}); 
+
+
+// Target the "Login" menu item by its href value
+var $loginMenuItem = $('a[href="https://secure.winkreports.com/accounts/sign-in"]');
+
+// Add the class to the "Login" menu item
+$loginMenuItem.addClass('mobile-login-btn');
+
+
+=====================================================================================================	
+$(document).ready(function() {
+var image1 = $('.btimg');
+var w = 100;
+var s = 2;
+var scrollSpeed = 50;
+var lastScrollTop = 0;
+
+$(window).scroll(function() {
+var scroll = $(this).scrollTop();
+var scrollDifference = scroll - lastScrollTop;
+
+if (scroll > 50) {
+$("header").addClass("sticky");
+$(".fullscreen-bg__video").addClass("hide");
+$(".c-block").addClass("hide");
+$(".banner").addClass("scroll");
+} else {
+$("header").removeClass("sticky");
+$(".fullscreen-bg__video").removeClass("hide");
+$(".c-block").removeClass("hide");
+$(".banner").removeClass("scroll");
+}
+
+if (scroll > 599) {
+$(".banner").addClass("pos-fixed");
+$('.bottom-full-icon').addClass("show");
+
+// Decrease image size when scrolling down
+w -= s;
+if (w < 100) {
+w = 100;
+}
+} else {
+$(".banner").removeClass("pos-fixed");
+$('.bottom-full-icon').removeClass("show");
+
+// Increase image size when scrolling up
+w += s;
+if (w > 150) { // Set a maximum size if needed
+w = 150;
+}
+}
+
+image1.css({
+'max-width': w + '%'
+});
+
+lastScrollTop = scroll;
+});
+});
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------------------------------------------	
+
+$(document).ready(function() {
+var element = $('#element-to-move');
+
+$(window).resize(function() {
+if ($(window).width() <= 767) {
+element.appendTo(".nn");
+} else {
+element.appendTo('body');
+}
+});
+
+// Trigger the resize event on page load
+$(window).resize();
+});
+
+
+---------------------------------------------------------------------------------------------------
+
+<div id="element-to-move">Content to Move</div>
+
+
+<div class="nn">
+</div>
+
+----------------------------------
+
+@media only screen and (max-width: 767px) {
+#mobile-location {
+display: none;
+}
+}
+===================================================================================================
+------------------------------------------------------------------------------------------------------------------
+step-{{ loop.index }}
+
+--------------------------------------------------------------------------------------------------------------------
+{% cycle "odd","even" %}
+
+
+
+==============================================================================================
+
+// ACCORDION 
+
+$('.accordion-header').click(function() {
+let $this = $(this);
+let $accordionItem = $this.closest('.accordion-item');
+
+if ($this.next().hasClass('show')) {
+$this.next().removeClass('show');
+$this.next().slideUp();
+$accordionItem.removeClass('active'); // Remove "active" class
+} else {
+$this.parent().parent().find('.accordion-content').removeClass('show');
+$this.parent().parent().find('.accordion-content').slideUp();
+$this.next().toggleClass('show');
+$this.next().slideToggle();
+$accordionItem.addClass('active'); // Add "active" class
+}
+});
+==============================================================================================
+
+
+$(document).ready(function(){
+// Show the "scroll to top" button when user scrolls down
+//   $(window).scroll(function() {
+//     if ($(this).scrollTop() > 100) {
+//       $('.scroll-top').fadeIn();
+//     } else {
+//       $('.scroll-top').fadeOut();
+//     }
+//   });
+
+// Smooth scroll to top when the button is clicked
+$('.scroll-top').click(function() {
+$('html, body').animate({ scrollTop: 0 }, 800);
+return false;
+});
+});
+
+
+
+
+$(document).ready(function() {
+$(".hs-item-has-children").click(function() {
+if ($(this).hasClass("show")) {
+$(this).removeClass("show");
+} else {
+$(".hs-item-has-children").removeClass("show");
+$(this).addClass("show");
+}
+});
+});
+
+===============================================================================
+
+// MOVE DIV WITH JQUERY TO ANTHOR DIV
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Move Div in Mobile View</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div id="container1">
+<div id="myDiv">This is the div to move</div>
+</div>
+
+<div id="container2">
+<!-- Empty container where we want to move 'myDiv' to in mobile view -->
+</div>
+
+<script>
+$(document).ready(function() {
+// Function to move the div based on screen width
+function moveDivBasedOnScreenWidth() {
+if ($(window).width() < 768) { // You can adjust this width as needed
+$('#myDiv').appendTo('#container2');
+} else {
+$('#myDiv').appendTo('#container1');
+}
+}
+
+// Call the function on page load
+moveDivBasedOnScreenWidth();
+
+// Call the function whenever the window is resized
+$(window).resize(function() {
+moveDivBasedOnScreenWidth();
+});
+});
+</script>
+</body>
+</html>
+
+
+
+
+================================================================================
+
+LInkdin Script: 
+
+
+<div class='sk-ww-linkedin-page-post' data-embed-id='193883'></div><script src='https://widgets.sociablekit.com/linkedin-page-posts/widget.js' async defer></script>
+
+
+
+==================================================================================
+// ADD ACTIVE CLASS WITH JQUERY
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+/* Define the CSS style for the active class */
+.active {
+font-weight: bold; /* You can customize this as per your needs */
+}
+</style>
+</head>
+<body>
+<div class="blog-post-category-main">
+<div class="inner-single-category">
+<a href="#" class="category-link">All</a>
+</div>
+<div class="inner-single-category">
+<a href="#" class="category-link">Category 1</a>
+</div>
+<div class="inner-single-category">
+<a href="#" class="category-link">Category 2</a>
+</div>
+<div class="inner-single-category">
+<a href="#" class="category-link">Category 3</a>
+</div>
+<div class="inner-single-category">
+<a href="#" class="category-link">Category 4</a>
+</div>
+<div class="inner-single-category">
+<a href="#" class="category-link">Category 5</a>
+</div>
+<div class="inner-single-category">
+<a href="#" class="category-link">Category 6</a>
+</div>
+</div>
+
+<script>
+$(document).ready(function () {
+// Retrieve the information about the clicked button from localStorage
+var activeButton = localStorage.getItem("activeButton");
+
+// Remove the "active" class from all category links
+$(".category-link").removeClass("active");
+
+// Add the "active" class to the category link corresponding to the clicked button
+$("#" + activeButton).addClass("active");
+
+// Clear the stored information from localStorage
+localStorage.removeItem("activeButton");
+});
+</script>
+</body>
+</html>
+
+=================================================================================
+// Add class on window Load
+
+<script>
+$(window).on('load', function() {
+$('body').addClass('loaded');
+});
+</script>
+
+
+==========================================================================================
+
+// ON MOBILE VIEW TO SCROLL TOP
+
+<button id="scrollToTopBtn">Scroll to Top</button>
+
+
+css: 
+#scrollToTopBtn {
+display: none; /* Initially hide the button */
+}
+
+/* Show the button only on mobile devices (you can adjust the max-width based on your target devices) */
+@media (max-width: 768px) {
+#scrollToTopBtn {
+display: block;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 9999;
+}
+}
+js: 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+// Add an event listener to the button using jQuery
+$(document).ready(function() {
+$('#scrollToTopBtn').on('click', function() {
+// Scroll to the top of the page smoothly
+$('html, body').animate({ scrollTop: 0 }, 'slow');
+});
+});
+</script>
+
+=========================================================================
+=======
+// ADD CLASS ON BODY IF PAGE IS OPEN IN MACBOOK
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>MacBook Class Addition</title>
+</head>
+<body>
+
+<script>
+// Function to check if the user is on a MacBook
+function isMacBook() {
+return /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+}
+
+// Function to add a class to the body element
+function addClassToBodyIfMacBook() {
+if (isMacBook()) {
+document.body.classList.add('macbook');
+}
+}
+
+// Call the function on page load
+addClassToBodyIfMacBook();
+</script>
+
+</body>
+</html>
+
+==========================================================================
+
+// ADD CLASS ON SCROLL
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scroll to Add Class</title>
+<style>
+/* Some example styles */
+body {
+height: 2000px;
+margin: 0;
+padding: 0;
+}
+.box {
+width: 100px;
+height: 100px;
+background-color: red;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+body.scrolled {
+background-color: blue;
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+// Function to add class on scroll
+function addClassOnScroll() {
+var scrollPosition = $(window).scrollTop();
+
+if (scrollPosition > 0) {
+$('body').addClass('scrolled');
+} else {
+$('body').removeClass('scrolled');
+}
+}
+
+// Call the function on page load
+addClassOnScroll();
+
+// Call the function on scroll
+$(window).scroll(function() {
+addClassOnScroll();
+});
+});
+</script>
+</body>
+</html>
+
+====================================================================================
+// TABBING WITH SLIDER
+
+<div class="lawyan-module__tabbed-slider" data-aos="fade-up">
+<div class="content-wrapper">
+<div class="swiper-heading-button-outer">
+<div class="heading-content">
+{{ module.add_heading }}
+</div>
+<div class="swiper-button-outer">
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div>
+<div class="lawyan__tabbed-slider-main">
+<div class="lawyan__tabbed-slider-outer">
+<div class="lawyan-module__tabbed-slider__tabs">
+{% for item in module.tab_repeater_section %}
+<div class="tab card-shadow-m{% if loop.index == 1 %} active{% endif %}" data-tab-index="{{ loop.index }}">
+{% if item.left_content_group.add_client_image.src %}
+<div class="tab-image">
+{% set sizeAttrs = 'width="{{ item.left_content_group.add_client_image.width }}" height="{{ item.left_content_group.add_client_image.height }}"' %}
+{% if item.left_content_group.add_client_image.size_type == 'auto' %}
+{% set sizeAttrs = 'width="{{ item.left_content_group.add_client_image.width }}" height="{{ item.left_content_group.add_client_image.height }}" style="max-width: 100%; height: auto;"' %}
+{% elif item.left_content_group.add_client_image.size_type == 'auto_custom_max' %}
+{% set sizeAttrs = 'width="{{ item.left_content_group.add_client_image.max_width }}" height="{{ item.left_content_group.add_client_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+{% endif %}
+{% set loadingAttr = item.left_content_group.add_client_image.loading != 'disabled' ? 'loading="{{ item.left_content_group.add_client_image.loading }}"' : '' %}
+<img src="{{ item.left_content_group.add_client_image.src }}" alt="{{ item.left_content_group.add_client_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+</div>
+{% endif %}
+<div class="tab-name-state">
+<div class="tab-name">{{ item.left_content_group.add_name }}</div>
+<div class="tab-state">{{ item.left_content_group.add_state }}</div>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>
+<div class="lawyan-module__tabbed-slider__slides-outer">
+<div class="lawyan-module__tabbed-slider__slides">
+<div class="swiper-container">
+<div class="swiper-wrapper" id="swiper-wrapper-4d1a03ce29435361" aria-live="polite">
+{% for item in module.tab_repeater_section %}
+<div class="swiper-slide" data-swiper-slide-index="{{ loop.index - 1 }}" role="group" aria-label="{{ loop.index }} / 8" >
+<div class="item">
+<div class="body-heading-m item-title">
+{{ item.right_content_group.title_content }}
+</div>
+<div class="item-star-image">
+{% for item2 in item.right_content_group.rating_group %}
+{% if item2.add_star_image.src %}
+<div class="single-img">
+{% set sizeAttrs = 'width="{{ item2.add_star_image.width }}" height="{{ item2.add_star_image.height }}"' %}
+{% if item2.add_star_image.size_type == 'auto' %}
+{% set sizeAttrs = 'width="{{ item2.add_star_image.width }}" height="{{ item2.add_star_image.height }}" style="max-width: 100%; height: auto;"' %}
+{% elif item2.add_star_image.size_type == 'auto_custom_max' %}
+{% set sizeAttrs = 'width="{{ item2.add_star_image.max_width }}" height="{{ item2.add_star_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+{% endif %}
+{% set loadingAttr = item2.add_star_image.loading != 'disabled' ? 'loading="{{ item2.add_star_image.loading }}"' : '' %}
+<img src="{{ item2.add_star_image.src }}" alt="{{ item2.add_star_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+<div class="item-description">
+{{ item.right_content_group.add_content }}
+</div>
+</div>
+</div>
+{% endfor %}
+</div>
+<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide "></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide "></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide "></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide "></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide "></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide "></span></div>
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+{% require_js %}
+<script>
+//# sourceMappingURL=swiper-bundle.min.js.map
+"use strict";
+
+window.addEventListener('DOMContentLoaded', function () {
+var tabbedSliders = 0;
+$(".lawyan-module__tabbed-slider").each(function () {
+tabbedSliders++;
+$(this).find(".swiper-container").addClass("tabbed-slider-".concat(tabbedSliders));
+var slider = new Swiper(".tabbed-slider-".concat(tabbedSliders), {
+//         loop: true,
+spaceBetween: 40,
+mousewheel: false,
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+pagination: {
+el: '.swiper-pagination',
+type: 'bullets',
+clickable: true
+}
+});
+var tabs = $(this).find(".tab");
+tabs.each(function () {
+$(this).on("click", function (event) {
+event.preventDefault();
+slider.slideToLoop($(this).data("tab-index") - 1);
+tabs.removeClass("active");
+$(this).addClass("active");
+});
+});
+slider.on('slideChange', function (instance) {
+tabs.removeClass("active");
+tabs.filter("[data-tab-index='".concat(instance.realIndex + 1, "']")).addClass("active");
+});
+});
+});
+
+// Create a div to wrap the buttons
+var buttonsWrapper = $('<div id="button-wrapper"></div>');
+
+// Create the previous button
+var prevButton = $('<div class="swiper-button-prev"></div>');
+
+// Create the next button
+var nextButton = $('<div class="swiper-button-next"></div');
+
+// Append the buttons to the buttonsWrapper
+buttonsWrapper.append(prevButton, nextButton);
+
+// Append the buttonsWrapper to the .lawyan-module__tabbed-slider__slides-outer div
+$('.lawyan-module__tabbed-slider__slides').append(buttonsWrapper);
+</script>
+{% end_require_js %}
+
+<style>
+.lawyan-module__tabbed-slider {
+background-color: var(--dark_blue);
+padding: 54px 0 108px;
+position: relative;
+margin-top: 125px;
+}
+.lawyan-module__tabbed-slider::after {
+position: absolute;
+content: "";
+background-image: url(https://lawyan.com/hubfs/Lawyan-2023/featured%20column%20shape.png);
+width: 100%;
+background-repeat: no-repeat;
+background-position: top;
+background-size: 100% 100%;
+top: -112px;
+left: 0;
+height: 125px;
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+display: none;
+}
+.lawyan-module__tabbed-slider .swiper-heading-button-outer *,
+.tab.card-shadow-m .tab-name-state *,
+.item-description *,
+.body-heading-m.item-title h4 {
+color: var(--primary_white);
+}
+
+.lawyan-module__tabbed-slider .swiper-heading-button-outer h3 {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.tab.card-shadow-m {
+display: flex;
+align-items: center;
+gap: 20px;
+padding: 29px 18px;
+cursor: pointer;
+border-radius: 5px;
+}
+.tab-name {
+font-size: 21px;
+font-weight: 700;
+margin: 0 0 15px;
+line-height:1;
+}
+
+.tab-state {
+font-size: 17px;
+font-weight: 700;
+line-height:1;
+}
+
+.lawyan__tabbed-slider-main {
+display: flex;
+justify-content: space-between;
+align-items:center;
+}
+
+.item-star-image {
+display: flex;
+gap: 5px;
+margin-bottom:33px;
+}
+
+.item-description * {
+font-size: 18px;
+line-height: 30px;
+}
+.body-heading-m.item-title h4 {
+font-size: 30px;
+margin: 0 0 5px;
+font-weight: 700;
+line-height: 40px;
+}
+.lawyan__tabbed-slider-outer {
+flex: 0 0 32.6%;
+max-width: 32.6%;
+}
+
+.lawyan-module__tabbed-slider__slides-outer {
+flex: 0 0 60%;
+max-width: 60%;
+overflow-x: clip;
+position: relative;
+margin-top:25px;
+}
+.tab.card-shadow-m.active {
+filter: drop-shadow(0 0 4.5px rgba(0,0,0,0.26));
+background-color: #01a3ff;
+}
+.tab.card-shadow-m + .tab.card-shadow-m {
+margin-top: 10px;
+}
+
+
+/**** css for the buttons *****/
+.swiper-button-outer {
+display: none !important;
+}
+#button-wrapper {
+position: absolute;
+top: 0;
+right: 0;
+width: 117px;
+z-index: 999;
+height: 51px;
+margin-top: -150px;
+z-index: 9999;
+}
+#button-wrapper .swiper-button-next::after {
+content: "";
+position: absolute;
+background-image: url(https://20004591.fs1.hubspotusercontent-na1.net/hubfs/20004591/Lawyan-2023/right-arrow-lawyan.png);
+width: 42px;
+height: 20px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
+
+#button-wrapper .swiper-button-prev::after {
+content: "";
+position: absolute;
+background-image: url(https://20004591.fs1.hubspotusercontent-na1.net/hubfs/20004591/Lawyan-2023/right-arrow-lawyan.png);
+width: 42px;
+height: 20px;
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+scale: -1;
+}
+#button-wrapper  .swiper-button-prev.swiper-button-disabled::after {
+background-image: url(https://20004591.fs1.hubspotusercontent-na1.net/hubfs/20004591/Lawyan-2023/right-arrow%20-lite%20lawyan.png);
+scale: 1;
+}
+#button-wrapper .swiper-button-next.swiper-button-disabled::after {
+background-image: url(https://20004591.fs1.hubspotusercontent-na1.net/hubfs/20004591/Lawyan-2023/right-arrow%20-lite%20lawyan.png);
+scale: -1;
+}
+/*** responsive ***/
+@media (max-width:1199px){
+.lawyan__tabbed-slider-outer {
+flex: 0 0 28.6%;
+max-width: 28.6%;
+}
+.tab-name {
+font-size: 20px;
+}
+}
+
+
+@media (max-width:991px){
+.lawyan__tabbed-slider-outer {
+flex: 0 0 33.6%;
+max-width: 33.6%;
+}
+.tab-name {
+font-size: 17px;
+}
+.tab-state {
+font-size: 14px;
+}
+}
+
+@media (max-width:767px){
+.lawyan-module__tabbed-slider {
+margin-top: 48px;
+}
+.lawyan-module__tabbed-slider::after {
+height: 48px;
+top: -43px;
+}
+.lawyan__tabbed-slider-main {
+flex-direction: column;
+align-items: normal;
+gap: 50px;
+}
+.lawyan-module__tabbed-slider__slides-outer,
+.lawyan__tabbed-slider-outer {
+margin: 0;
+flex: 0 0 100%;
+max-width: 100%;
+}
+div#button-wrapper {
+display: none;
+}
+}
+</style>
+
+===========================================================================
+// MOVE CSS TO HEADER AND USE ONLY SPECIFIC MODULE
+
+{% require_css %}
+
+{% scope_css %}
+{% end_scope_css %}
+
+{% end_require_css %}
+
+{% require_js %}
+
+{% end_require_js %}
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+=============================================================================
+// Add Active class
+
+<ul class="filters">
+<li data-filter="*" class="active">All</li>
+<li data-filter="notcat" class="">Not Cat</li>
+<li data-filter="cats" class="">Cats</li>
+</ul>
+
+$(document).ready(function() {
+// Initially, set the "All" option as active
+$(".filters li[data-filter='*']").addClass("active");
+
+// Add click event handler to the list items
+$(".filters li").click(function() {
+// Remove the "active" and "show" classes from all list items
+$(".filters li").removeClass("active");
+
+// Add the "active" and "show" classes to the clicked list item
+$(this).addClass("active");
+});
+});
+
+=========================================================================
+// SPEED OPTIMIZATION
+
+{{ require_js(get_asset_url("https://example.com/cdn/"), { position: "footer", defer: true }) }}
+
+{{ require_css(get_asset_url('../../css/library.min.css'), { async: true }) }}
+
+
+
+==========================================================================
+
+//Thumbnail click to play video
+
+<div class="left-content-with-right-video">
+<div class="content-wrapper">
+{% if module.add_header_content %}
+<div class="header-text">
+{{ module.add_header_content }}
+</div>
+{% endif %}
+<div class="left-content-with-right-video-outer">
+<div class="left-content-sec">
+<div class="left-content-main">
+{{ module.left_group.add_left_content }}
+</div>
+<div class="left-cta-btn">
+{% cta guid="{{ module.left_group.left_cta }}" %}
+</div>
+</div>
+<div class="right-video-sec">
+<div class="video-play-btn-sec">
+<div class="video-image">
+{% if module.right_group.select_image.src %}
+{% set sizeAttrs = 'width="{{ module.right_group.select_image.width }}" height="{{ module.right_group.select_image.height }}"' %}
+{% if module.right_group.select_image.size_type == 'auto' %}
+{% set sizeAttrs = 'width="{{ module.right_group.select_image.width }}" height="{{ module.right_group.select_image.height }}" style="max-width: 100%; height: auto;"' %}
+{% elif module.right_group.select_image.size_type == 'auto_custom_max' %}
+{% set sizeAttrs = 'width="{{ module.right_group.select_image.max_width }}" height="{{ module.right_group.select_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+{% endif %}
+{% set loadingAttr = module.right_group.select_image.loading != 'disabled' ? 'loading="{{ module.right_group.select_image.loading }}"' : '' %}
+<img src="{{ module.right_group.select_image.src }}" alt="{{ module.right_group.select_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+</div>
+<div class="video-play-icon">
+{% if module.right_group.play_icon.src %}
+{% set sizeAttrs = 'width="{{ module.right_group.play_icon.width }}" height="{{ module.right_group.play_icon.height }}"' %}
+{% if module.right_group.play_icon.size_type == 'auto' %}
+{% set sizeAttrs = 'width="{{ module.right_group.play_icon.width }}" height="{{ module.right_group.play_icon.height }}" style="max-width: 100%; height: auto;"' %}
+{% elif module.right_group.play_icon.size_type == 'auto_custom_max' %}
+{% set sizeAttrs = 'width="{{ module.right_group.play_icon.max_width }}" height="{{ module.right_group.play_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+{% endif %}
+{% set loadingAttr = module.right_group.play_icon.loading != 'disabled' ? 'loading="{{ module.right_group.play_icon.loading }}"' : '' %}
+<img src="{{ module.right_group.play_icon.src }}" alt="{{ module.right_group.play_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+</div>
+</div>
+<div class="play-video" style="display:none;">
+<video id="video"  width="320" height="240" controls>
+<source src="{{ module.right_group.video_mp4 }}" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+$('document').ready(function()
+{
+$('.video-play-icon').click(function()
+{
+//console.log("ok");
+$('.video-play-btn-sec').css('display','none');
+$('.play-video').css('display','block');
+const video = document.getElementById("video");
+video.play();
+});
+});
+</script>
+
+
+============================================================================
+// Stop click on link when href='javascript:;'
+
+$(document).ready(function() {
+$("a[href='javascript:;']").click(function(event) {
+event.preventDefault(); // Prevent the default link behavior
+// Add your custom code here if needed
+});
+});
+
+============================================================================
+error page budgetease
+http://prntscr.com/PijPmwozz4mY
+
+
+============================================================================
+
+//Counter reduce days
+
+<div class="outer-days-content">
+<div class="outer-time-number">
+<div class="inner-number">
+<h2 id="days">48</h2>
+</div>
+<div class="inner-time-content">
+<h3>
+Days
+</h3> 
+</div>
+</div>
+
+<div class="outer-time-number">
+<div class="inner-number">
+<h2 id="hours">13</h2>
+</div>
+<div class="inner-time-content">
+<h3>
+Hours
+</h3> 
+</div>
+</div>
+
+<div class="outer-time-number">
+<div class="inner-number">
+<h2 id="minutes">4</h2>
+</div>
+<div class="inner-time-content">
+<h3>
+Minutes
+</h3> 
+</div>
+</div>
+
+<div class="outer-time-number">
+<div class="inner-number">
+<h2 id="seconds">50</h2>
+</div>
+<div class="inner-time-content">
+<h3>
+Seconds
+</h3> 
+</div>
+</div>
+</div>
+
+<script>
+(function () {
+const second = 1000,
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
+
+//I'm adding this section so I don't have to keep updating this pen every year :-)
+//remove this if you don't need it
+let today = new Date(),
+dd = String(today.getDate()).padStart(2, "0"),
+mm = String(today.getMonth() + 1).padStart(2, "0"),
+yyyy = today.getFullYear(),
+nextYear = yyyy + 1,
+dayMonth = "12/25/",
+birthday = dayMonth + yyyy;
+
+today = mm + "/" + dd + "/" + yyyy;
+if (today > birthday) {
+birthday = dayMonth + nextYear;
+}
+//end
+
+const countDown = new Date(birthday).getTime(),
+x = setInterval(function() {    
+
+const now = new Date().getTime(),
+distance = countDown - now;
+
+document.getElementById("days").innerText = Math.floor(distance / (day)),
+document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+}, 0)
+}());
+</script>
+
+
+// set date and time by own and stop counter after complition
+
+$(document).ready(function () {
+const second = 1000,
+minute = second * 60,
+hour = minute * 60,
+day = hour * 24;
+
+// Specify your target date in the format MM/DD/YYYY
+let targetDate = new Date("11/12/2023 12:00AM");
+
+const countDown = targetDate.getTime();
+const x = setInterval(function() {    
+const now = new Date().getTime();
+const distance = countDown - now;
+
+if (distance <= 0) {
+// If time is completed, stop the counter
+clearInterval(x);
+// Optionally, you can do something when the countdown is completed
+console.log("Countdown completed!");
+} else {
+$("#days").text(Math.floor(distance / day));
+$("#hours").text(Math.floor((distance % day) / hour));
+$("#minutes").text(Math.floor((distance % hour) / minute));
+$("#seconds").text(Math.floor((distance % minute) / second));
+}
+}, 1000); // Update the countdown every second (1000 milliseconds)
+});
+=============================================================
+
+
+// Images with boolean
+
+{
+"label": "Heading with image",
+"name": "heading_with_img", 
+"type": "group",
+"children": [
+{
+"label" : "Boolean",
+"name" : "add_fun_img",
+"help_text": "Add Fun Image boolean. Default is ON.",
+"display" : "toggle",
+"type" : "boolean",
+"default" : true
+},
+{
+"label" : "Image",
+"name" : "image_field",
+"responsive" : true,
+"resizable" : true,
+"type" : "image",
+"default" : {
+"size_type" : "exact",
+"src" : "https://4037193.fs1.hubspotusercontent-na1.net/hub/4037193/hubfs/Christmas%20Theme/images/Landing%20page/hat.png?width=128&height=87&name=hat.png",
+"alt" : "image-alt-text",
+"loading" : "lazy"
+}
+}
+]
+},
+
+
+
+===========================================================
+
+// Remove Hubspot form heading
+
+{% if module.title is truthy %}
+{% set no_title = False %}
+{% else %}
+{% set no_title = True %}
+{% endif %}
+
+{% form
+no_title='{{ no_title }}'
+form_to_use="{{ module.left_form_group.add_form.form_id }}"
+response_response_type="{{ module.left_form_group.add_form.response_type }}"
+response_message="{{ module.left_form_group.add_form.message }}"
+response_redirect_id="{{ module.left_form_group.add_form.redirect_id }}"
+response_redirect_url="{{module.left_form_group.add_form.redirect_url}}"
+gotowebinar_webinar_key="{{ module.left_form_group.add_form.gotowebinar_webinar_key }}"
+%}
+
+====================================================================
+
+// popup show
+$(document).ready(function() {
+$('a[href="#elementor-action"]').on('click', function(e) {
+e.preventDefault(); // Prevent the default link behavior
+$('body').addClass('popup-show');
+});
+$('#close-btn').click(function(){
+$('body').removeClass('popup-show');
+})
+});
+
+==============================================================================
+
+Add class on page load (example in "hows-healthy blog")
+
+<div class="tag_list_menu">
+<div class="inner_single_tag">
+{% set href = module.all_text_group.add_link.url.href %}
+{% if module.all_text_group.add_link.url.type is equalto "EMAIL_ADDRESS" %}
+{% set href = "mailto:" + href %}
+{% endif %}
+<a class="active" href="{{ href }}"
+{% if module.all_text_group.add_link.open_in_new_tab %}target="_blank"{% endif %}
+{% if module.all_text_group.add_link.rel %}rel="{{ module.all_text_group.add_link.rel }}"{% endif %}
+>
+{{ module.all_text_group.all_text }}
+</a>
+</div>
+{% set my_tags = blog_tags(module.select_blog, 250) %}
+{% for item in my_tags %}
+<div class="inner_single_tag">
+<a href="{{ blog_tag_url(group.id, item.slug) }}">{{ item.name }}</a>
+</div>
+{% endfor %}
+</div>
+
+$(document).ready(function(){
+// Function to add the "active" class based on the current page URL
+function setActiveClass() {
+var currentPageURL = window.location.href;
+
+// Remove the "active" class from all menu items
+$('.tag_list_menu a').removeClass('active');
+
+// Add the "active" class to the clicked menu item
+$('.tag_list_menu a').filter(function() {
+return this.href === currentPageURL;
+}).addClass('active');
+
+// If no menu item is active, add "active" class to the first menu item
+if ($('.tag_list_menu a.active').length === 0) {
+$('.tag_list_menu a:first').addClass('active');
+}
+}
+
+// Add click event listener to all anchor tags inside the menu
+$('.tag_list_menu a').on('click', function() {
+// Remove the "active" class from all menu items
+$('.tag_list_menu a').removeClass('active');
+
+// Add the "active" class to the clicked menu item
+$(this).addClass('active');
+});
+
+// Call the function on page load
+setActiveClass();
+});
+
+
+===============================================================================
+
+// On click to show input field pass
+
+<div class="hs-form-field">
+<label for="hs-reset-widget-password">Password*</label>
+<a class="hs-reset-widget-show-password" href="javascript:show_password('hs-reset-widget-password');">Show password</a>
+<input class="hs-input" name="password" type="password" placeholder="Password" id="hs-reset-widget-password">
+</div>
+<script>
+$(document).ready(function () {
+$(".hs-reset-widget-show-password:even").on("click", function (e) {
+e.preventDefault(); // Prevent the default link behavior
+
+var passwordInput = $("#hs-reset-widget-password");
+
+// Toggle between 'password' and 'text' types
+var currentType = passwordInput.attr("type");
+var newType = (currentType === "password") ? "text" : "password";
+
+passwordInput.attr("type", newType);
+});
+});
+</script>
+
+================================================================================
+// Table of content with scroll active
+
+let a;
+
+class TableOfContents {
+/* The parameters from and to must be Element objects in the DOM. */
+constructor({ from, to }) {
+this.fromElement = from;
+this.toElement = to;
+// Get all the ordered headings.
+this.headingElements = this.fromElement.querySelectorAll("h1, h2, h3, h4, h5, h6");
+// this.headingElements = this.fromElement.querySelectorAll("h1, h2, h3, h4, h5, h6");
+this.tocElement = document.createElement("div");
+}
+/*
+Get the most important heading level.
+For example if the article has only <h2>, <h3> and <h4> tags
+this method will return 2.
+*/
+getMostImportantHeadingLevel() {
+let mostImportantHeadingLevel = 6; // <h6> heading level
+for (let i = 0; i < this.headingElements.length; i++) {
+let headingLevel = TableOfContents.getHeadingLevel(this.headingElements[i]);
+// mostImportantHeadingLevel = (headingLevel < mostImportantHeadingLevel) ?
+//  headingLevel : mostImportantHeadingLevel;
+mostImportantHeadingLevel = (headingLevel < mostImportantHeadingLevel) ?
+headingLevel : mostImportantHeadingLevel;
+}
+// console.log("mostImportantHeadingLevel"+mostImportantHeadingLevel);
+return mostImportantHeadingLevel;
+}
+/*  Generate a unique id string for the heading from its text content.   */
+static generateId(headingElement) {
+return headingElement.textContent.replace(/\s+/g, "_");
+}
+/*  Convert <h1> to 1 … <h6> to 6.*/
+
+static getHeadingLevel(headingElement) {
+switch (headingElement.tagName.toLowerCase()) {
+case "h1": return 1;
+case "h2": return 2;
+case "h3": return 3;
+case "h4": return 4;
+case "h5": return 5;
+case "h6": return 6;
+default: return 1;
+}
+}
+
+generateToc() {
+let currentLevel = this.getMostImportantHeadingLevel() - 1,
+currentElement = this.tocElement;
+// console.log("currentLevel"+currentLevel);
+for (let i = 0; i < this.headingElements.length; i++) {
+let headingElement = this.headingElements[i],
+headingLevel = TableOfContents.getHeadingLevel(headingElement),
+headingLevelDifference = headingLevel - currentLevel,
+linkElement = document.createElement("a");
+// console.log("headingLevel"+headingLevel);
+
+
+if (!headingElement.id) {
+headingElement.id = TableOfContents.generateId(headingElement);
+// console.log("headingElement.id "+headingElement.id );
+a = '#'+headingElement.id;
+}
+headingElement.id = headingElement.id.replace(/[&\/\\#, +()$~%.'":*?!<>{}]/g, '_');
+linkElement.href = `#${headingElement.id }`;
+linkElement.textContent = headingElement.textContent;
+
+// console.log("headingLevelDifference"+headingLevelDifference);
+if (headingLevelDifference > 0) {
+// Go down the DOM by adding list elements.
+for (let j = 0; j < headingLevelDifference; j++) {
+let listElement = document.createElement("ul"),
+listItemElement = document.createElement("li");
+listElement.appendChild(listItemElement);
+currentElement.appendChild(listElement);
+currentElement = listItemElement;
+}
+currentElement.appendChild(linkElement);
+} else {
+// Go up the DOM.
+for (let j = 0; j < -headingLevelDifference; j++) {
+currentElement = currentElement.parentNode.parentNode;
+}
+let listItemElement = document.createElement("li");
+listItemElement.appendChild(linkElement);
+currentElement.parentNode.appendChild(listItemElement);
+currentElement = listItemElement;
+}
+
+currentLevel = headingLevel;
+}
+
+this.toElement.appendChild(this.tocElement.firstChild);
+}
+}
+
+document.addEventListener("DOMContentLoaded", () =>
+new TableOfContents({
+from: document.querySelector(".article"),
+to: document.querySelector(".table-of-contents")
+}).generateToc()
+);
+
+$(document).ready(function(){
+$(".table-of-contents ").addClass("oo_checking");
+$(".table-of-contents ul").addClass("oo_checking");
+$('.article h1,.article  h2,.article  h3,.article  h4,.article h5,.article h6').addClass('heading-list');
+setTimeout(function(){
+
+$(window).scroll(function() {
+var windscroll = $(window).scrollTop();
+if (windscroll >= 100) {
+// console.log("okk");
+$('.heading-list').each(function(i) {
+// console.log("i"+i);
+// The number at the end of the next line is how pany pixels you from the top you want it to activate.
+if ($(this).position().top-150 <= windscroll - 0) {
+var j = i+1;
+$('.table-of-contents li').eq(1).addClass("ok");
+$('.table-of-contents li.active').removeClass('active');
+
+$('.table-of-contents li').eq(i).addClass('active');
+$('.table-of-contents li a').eq(1).addClass("ok");
+$('.table-of-contents  a.active').removeClass('active');
+
+$('.table-of-contents  a').eq(i).addClass('active');
+$('.heading-list.active').removeClass('active');
+$('.heading-list').eq(i).addClass('active');
+}
+});
+} else {
+$('table-of-contents li').removeClass('active');
+$('.table-of-contents li:first').addClass('active');
+$('.table-of-contents li a').removeClass('active');
+$('.table-of-contents li a:first').addClass('active');
+}
+}).scroll();
+
+$("a[href^='#']").on("click", function(e) {
+// console.log("ok"+$(this).attr("href"));
+$("html, body").animate({
+scrollTop: $($(this).attr("href")).offset().top-120
+}, 1000);
+return false;
+});
+$('.table-of-contents > ul').addClass("active-item");
+}, 1000);
+
+});
+=========================================================
+
+// number field flag : account: test account 1
+
+// module: form flag: https://app.hubspot.com/design-manager/23401793/modules/165891057226?tfid=105919147656
+
+
+<script>
+//   form flag strat
+$(window).on('load', function(){
+//$(window).load(function(){
+setTimeout(function() {
+var selectedValue = $('.hs-fieldtype-phonenumber select').val();
+//console.log(selectedValue);
+
+$('.hs-fieldtype-phonenumber').prepend('<ul class="drop-down"><li class="active-lang"><a href="javascript:;" class="dropdown-toggle">Select Country</a><ul class="dropdown-menu"></ul></li></ul>');  
+
+$('.hs-fieldtype-phonenumber select option').each(function(){
+var thisval = $(this).val();
+var thistext = $(this).text();
+if(thisval){
+$('.dropdown-menu').append('<li><a href="javascript:;" data-country="'+thisval+'" ><img alt="'+thisval+'" width="20" height="13" loading="lazy" src="https://23401793.fs1.hubspotusercontent-na1.net/hubfs/23401793/flag/'+thisval+'.png"> <span>'+thistext+'</span></a></li>');
+}
+});
+
+
+$('ul.dropdown-menu li').each(function(){
+var country = $(this).find('a').attr('data-country');
+//console.log(country);
+if(country == selectedValue){
+// console.log(country);
+var counthryflag = $(this).find('a').html();
+//console.log(counthryflag);
+$('ul.drop-down li.active-lang a.dropdown-toggle').html(counthryflag);
+}
+});
+
+
+
+
+var dropdownToggle = $('.dropdown-toggle');
+var dropdownMenu = dropdownToggle.next('.dropdown-menu');
+var dropdownItems = dropdownMenu.find('li');
+
+// Toggle dropdown on click
+dropdownToggle.click(function(e){
+e.preventDefault();
+dropdownMenu.slideToggle('fast');
+});
+
+// Handle click on dropdown item
+dropdownMenu.on('click', 'li a', function(e){
+e.preventDefault();
+var countImage = $(this).html();
+dropdownToggle.html(countImage);
+dropdownMenu.slideToggle('fast');
+var currentCountry = $(this).attr('data-country');
+//console.log(currentCountry);
+$('.hs-fieldtype-phonenumber select option').each(function(){
+var selectcountry = $(this).val();
+if (selectcountry == currentCountry ) {
+$(this).val(currentCountry).change();
+}
+});
+});
+
+// Handle keyboard navigation
+$(document).on('keydown', function(e) {
+var activeItem = dropdownMenu.find('li a:focus');
+var keyCode = e.keyCode || e.which;
+switch(keyCode) {
+case 38: // Up arrow
+e.preventDefault();
+if (activeItem.length) {
+var prevItem = activeItem.parent().prev().find('a');
+if (prevItem.length) {
+prevItem.focus();
+} else {
+dropdownItems.last().find('a').focus();
+}
+} else {
+dropdownItems.last().find('a').focus();
+}
+break;
+case 40: // Down arrow
+e.preventDefault();
+if (activeItem.length) {
+var nextItem = activeItem.parent().next().find('a');
+if (nextItem.length) {
+nextItem.focus();
+} else {
+dropdownItems.first().find('a').focus();
+}
+} else {
+dropdownItems.first().find('a').focus();
+}
+break;
+case 13: // Enter key
+e.preventDefault();
+if (activeItem.length) {
+activeItem.trigger('click');
+}
+break;
+default:
+break;
+}
+
+// Add class to highlight selected item
+dropdownItems.removeClass('selected');
+dropdownMenu.find('li a:focus').parent().addClass('selected');
+});
+
+// Handle keyboard search
+$(document).on('keypress', function(e) {
+var char = String.fromCharCode(e.which);
+dropdownItems.each(function() {
+var text = $(this).text().toLowerCase();
+console.log(text);
+if (text.startsWith(char.toLowerCase())) {
+$(this).find('a').focus();
+return false; // Break the loop once a match is found
+}
+});
+});
+
+}, 500);
+});
+</script>
+<style>
+/* CSS for the dropdown */
+.drop-down {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.drop-down li {
+display: block;
+margin-right: 10px;
+}
+
+.drop-down li a {
+text-decoration: none;
+color: #000;
+}
+
+.drop-down li a:hover {
+text-decoration: underline;
+}
+
+/* CSS for the dropdown menu */
+.dropdown-menu {
+height: 236px;
+width: 300px;
+overflow: scroll;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 12px 16px;
+z-index: 1;
+}
+.hs-fieldtype-intl-phone select{
+display:none;
+} 
+.dropdown-menu li a img{
+height:20px;
+width:20px;
+}
+.selected{
+background-color:#ccc;
+}
+</style> 
+
+===============================================================================================================
+
+// slider logo smooth
+<div class="logo-main scroller" data-speed="fast" data-animated="true">
+
+<div class="logos_inner scroller__inner">
+<div class="logo">
+</div>
+</div>
+
+<div class="logos_inner scroller__inner--mobile">
+<div class="logo">
+</div>
+</div>
+
+</div>
+
+
+<style>
+.logo-main{padding:0;position:relative}.scroller__inner,.scroller__inner--mobile{display:flex;flex-wrap:wrap;gap:60px}.logo-main.scroller .logos_inner{background-color:var(--primary_color)}.scroller[data-animated=true]{overflow:hidden}.scroller[data-animated=true] .scroller__inner{align-items:center;animation:scroll var(--_animation-duration,40s) var(--_animation-direction,forwards) linear infinite;flex-wrap:nowrap;width:max-content}.scroller[data-animated=true] .scroller__inner--mobile{align-items:center;animation:scroll var(--_animation-duration,40s) var(--_animation-direction,forwards) linear infinite reverse;flex-wrap:nowrap;width:max-content}.scroller[data-direction=right]{--_animation-direction:reverse}.scroller[data-direction=left]{--_animation-direction:forwards}.scroller[data-speed=fast]{--_animation-duration:25s}.scroller[data-speed=slow]{--_animation-duration:60s}.service-count-section .heading-count .count-text span{margin-left:10px}@keyframes scroll{to{transform:translate(calc(-50% - .5rem))}}.logo-slider-section .heading h3{font-family:Balto;font-size:32px;font-weight:400;line-height:41.6px;margin:0 0 27.73px;text-align:center}.logo-main.scroller .scroller__inner,.logo-main.scroller .scroller__inner--mobile{gap:76.53px}.scroller__inner .logo img,.scroller__inner--mobile .logo img{max-height:52.59px;width:auto}@media (max-width:767px){.logos_inner.scroller__inner--mobile{display:flex!important;margin-top:44.5px}}
+</style>
+<script>
+const scrollers = document.querySelectorAll(".scroller");
+
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+addAnimation();
+}
+
+function addAnimation() {
+scrollers.forEach((scroller) => {
+// add data-animated="true" to every `.scroller` on the page
+scroller.setAttribute("data-animated", true);
+
+// Make an array from the elements within `.scroller-inner`
+const scrollerInner = scroller.querySelector(".scroller__inner");
+const scrollerContent = Array.from(scrollerInner.children);
+
+// For each item in the array, clone it
+// add aria-hidden to it
+// add it into the `.scroller-inner`
+scrollerContent.forEach((item) => {
+const duplicatedItem = item.cloneNode(true);
+duplicatedItem.setAttribute("aria-hidden", true);
+scrollerInner.appendChild(duplicatedItem);
+});
+});
+}
+
+</script>
+
+======================================================================
+======================================================================
+// Add class page section if multiple module same class
+
+$(document).ready(function() {
+// Select all divs with the class 'two-col-with-image-position'
+var divs = $('.two-col-with-image-position');
+
+// Check if there is a second div
+if (divs.length >= 3) {
+// Add the class to the second div
+divs.eq(1).addClass('two-col__list__image');
+}
+});
+
+===============================================================================
+// Remove div if form submit
+
+<!-- Custom JavaScript to handle form submission -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+function hideSecondDiv() {
+	document.getElementById('second-div').style.display = 'none';
+}
+
+// Use a MutationObserver to handle dynamic form rendering
+var observer = new MutationObserver(function(mutations) {
+	mutations.forEach(function(mutation) {
+		mutation.addedNodes.forEach(function(node) {
+			if (node.nodeType === 1 && node.tagName === 'FORM') {
+				node.addEventListener('submit', function() {
+					hideSecondDiv();
+				});
+			}
+		});
+	});
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+});
+</script>
