@@ -1,24 +1,177 @@
+<script>
+  // Get the current page URL
+var url = window.location.href;
+
+// Parse the URL to get the path
+var urlObject = new URL(url);
+var path = urlObject.pathname;
+
+
+var pathSegments = path.split("/");
+var specificPath = pathSegments[1]; 
+
+// Display the specific path
+console.log("Specific path:", specificPath);
+
+  
+  // Check if the specific path is "knowledge-base"
+if (specificPath === "knowledge") {
+    // Create a link element for the CSS file
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "{{ get_asset_url('/Restaurant 2022/css/knowledge-pages.css') }}"; 
+    // Append the link element to the head of the document
+    document.head.appendChild(link);
+} 
+</script>
+
+================================================================
+Section Color With opacity
+
+rgba({{ module.styles.line.color.color|convert_rgb }}, {{ module.styles.line.color.opacity / 100 }})
+===============================================================
+<div class="socialshare">
+	<div class="socialcont">
+	  <div>
+		Share this post:
+	  </div>
+	  <a href="https://www.facebook.com/sharer/sharer.php?u={{content.absolute_url }}" target="_blank">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="https://twitter.com/intent/tweet?url={{content.absolute_url }}" target="_blank">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="https://www.linkedin.com/shareArticle?url={{content.absolute_url }}" target="_blank"> 
+<i class="fa fa-linkedin"></i>
+</a>
+<a href="mailto:?body={{content.absolute_url }}" target="_blank"> 
+<i class="fa fa-envelope"></i>
+</a>
+
+
+
+	</div>
+	</div>
+
+============================================================
+Slider MODULE
+https://codepen.io/kevinpowell/pen/LYMXPaJ
+
+
+============================================================
+// Blog all post page
+
+{% if request.path == '/blog/all' %}
+{% global_partial path='../components/blog-all.html' %}
+{% else %}
+listing content
+{% endif %}
+
+
+
+// Template with sorting  
+
+<!--
+templateType: global_partial
+label: Blog All posts
+isAvailableForNewContent: false
+-->
+
+{% set sorting = request.query is string_containing "sort=name" ? 'name' : 'date' %}
+{% set posts = sorting == "name" ? contents|sort(False, False, "name") : contents %} 
+
+
+<section class="blog-all-posts">
+<div class="content-wrapper">
+<div class="heading-text">
+  <h1 class="blog-all-posts__heading">All blog posts</h1>
+</div>
+<div class="blog-all-posts__sorting">
+  <a href="/blog/all" class="item {{ sorting == 'date' ? 'active' : '' }}">Most recent</a>
+  <a href="/blog/all?sort=name" class="item  {{ sorting == 'name' ? 'active' : '' }}">Alphabetical</a>
+</div>
+
+<div class="blog-all-main_wrap">
+  <div class="inner-blog_posts_wrap">
+
+	<div class="blog-all-posts__items">
+	  {% for post in posts %}
+	  <div class="blog-all-posts__item">
+		<a href="{{ post.absolute_url }}">
+		  {#  <span class="blog-all-posts__thumb"
+			{% if post.featured_image %} data-bg='{{ resize_image_url(post.featured_image, 0, 50, 0) }}' {% endif %}
+		  ></span> #}
+		  <span class="blog-all-posts__thumb"><img src='{{ post.featured_image }}' alt="post-thumb-image" loading="lazy" height="32px" width="32px"></span>
+		 
+		  <span class="blog-all-posts__content">
+			<span class="blog-all-posts__title">{{ post.name }}</span>
+		  </span>
+		</a>
+	  </div>
+	  {% endfor %}
+	</div>
+
+  </div>
+</div>
+
+<div class="cta-wrap text-center">
+  <a href="/blog" class="c-cta-link reverse">Go to Blog</a>
+</div>
+
+</div><!-- .container -->
+</section>
+
+==========================================================
+anchor id smooth scroll
+$(document).ready(function() {
+// Smooth scrolling for all anchor links
+$('a[href^="#"]').on('click', function(event) {
+	var target = $(this.getAttribute('href'));
+	if( target.length ) {
+		event.preventDefault();
+		$('html, body').stop().animate({
+			scrollTop: target.offset().top
+		}, 1000);
+	}
+});
+});
+
+=======================================================
+
 // Video popup
 <div class="banner-botto-content play-btn__text-wrap">
-	  <p>Or watch a 30-second video</p>
-	</div>
-	
-	<div class="popup-video-main" style="display: none;">
-	  <div class="video-closeBtn">
-		<svg width="40" height="40" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4"></path></svg>
-	  </div>
-	  <div class="play-video">
-		<video id="video" width="320" height="240" controls="">
-		  <source src="https://www.growth.legal/hubfs/Growth%20Legal/video/03.04.2024_LGM%20Personal%20Injury_FINAL.mp4" type="video/mp4">
-		  <source src="movie.ogg" type="video/ogg">
-		  Your browser does not support the video tag.
-		</video>
-	  </div>
-	</div>
-	
-	
-$("document").ready((function(){$(".play-btn__text-wrap").click((function(){$("body").addClass("show_pop__Up"),$(".popup-video-main").css("display","block"),document.getElementById("video").play()})),$(".video-closeBtn").click((function(){$(".popup-video-main").hide(".popup-video-main"),$("body").removeClass("show_pop__Up"),document.getElementById("video").pause()}))}));
+<div class="banner-botto-content play-btn__text-wrap">
+  <p>Or watch a 30-second video</p>
+</div>
 
+<div class="popup-video-main" style="display: none;">
+  <div class="video-closeBtn">
+	<svg width="40" height="40" viewBox="0 0 40 40"><path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="black" stroke-width="4"></path></svg>
+  </div>
+  <div class="play-video">
+	<video id="video" width="320" height="240" playsinline controls="">
+	  <source src="https://www.growth.legal/hubfs/Growth%20Legal/video/03.04.2024_LGM%20Personal%20Injury_FINAL.mp4" type="video/mp4">
+	  <source src="movie.ogg" type="video/ogg">
+	  Your browser does not support the video tag.
+	</video>
+  </div>
+</div>
+
+$(document).ready(function(){
+$(".play-btn__text-wrap").click(function(event){
+ event.preventDefault();
+$("body").addClass("show_pop__Up");
+$(".popup-video-main").css("display", "block");
+document.getElementById("video").play();
+});
+
+$(".video-closeBtn").click(function(){
+$(".popup-video-main").hide();
+$("body").removeClass("show_pop__Up");
+document.getElementById("video").pause();
+});
+});
 =================================================================
 
 // Counter
@@ -52,7 +205,7 @@ var $body = $("body");
 
 var windowpos = $(window).scrollTop();
 // console.log(windowpos);
-if (windowpos > 96) {
+if (windowpos > 0) {
 $body.addClass("small-header");
 } else {
 $body.removeClass("small-header");	
@@ -226,50 +379,12 @@ document.addEventListener("DOMContentLoaded", hsOnReadyLoadFAQ);
 </div>
 
 ===============================================================================
-// Padding in dnd area
-{% dnd_section 
-padding={
-"default": {
-"top": 0,
-"right": 0,
-"bottom": 0,
-"left": 0
-},
-"mobile": {
-"top": 80,
-"right": 20,
-"bottom": 80,
-"left": 20
-}
-}
-%}
-
-
-// ADD MODULES IN TEMPLATES
-
-{% dnd_section %}
-
-{% dnd_column
-offset=0,
-width=12,
-%}
-{% dnd_row %}
-
-{% dnd_module path="/San Diego Wave FC/modules/custom module/Banner Module.module" width="12" %}
-{% end_dnd_module %}
-
-{% end_dnd_row %}
-
-
-{% end_dnd_column %}
-
-{% end_dnd_section %}
-
 
 {% dnd_section full_width="true" %}
-{% dnd_column  offset=0,  width=12,%}
+{% dnd_column  offset=0,  width=12 %}
 {% dnd_row %}
-{% dnd_module  "module_16915715385887" path="/Budgetease Theme/modules/custom-modules/banner-module-with-menu", label="banner-module-with-menu" %}{% end_dnd_module %}
+{% dnd_module  "module_16915715385887" path="/Budgetease Theme/modules/custom-modules/banner-module-with-menu", label="banner-module-with-menu" %}
+{% end_dnd_module %}
 {% end_dnd_row %}
 {% end_dnd_column %}
 {% end_dnd_section %}
@@ -1844,22 +1959,108 @@ divs.eq(1).addClass('two-col__list__image');
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 function hideSecondDiv() {
-	document.getElementById('second-div').style.display = 'none';
+document.getElementById('second-div').style.display = 'none';
 }
 
 // Use a MutationObserver to handle dynamic form rendering
 var observer = new MutationObserver(function(mutations) {
-	mutations.forEach(function(mutation) {
-		mutation.addedNodes.forEach(function(node) {
-			if (node.nodeType === 1 && node.tagName === 'FORM') {
-				node.addEventListener('submit', function() {
-					hideSecondDiv();
-				});
-			}
-		});
+mutations.forEach(function(mutation) {
+	mutation.addedNodes.forEach(function(node) {
+		if (node.nodeType === 1 && node.tagName === 'FORM') {
+			node.addEventListener('submit', function() {
+				hideSecondDiv();
+			});
+		}
 	});
+});
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
 });
 </script>
+
+
+
+-==========================================================
+slider hero left right on scroll
+
+<div class="slider-container">
+  <div class="slider-row" id="row-1">
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 1"></div>
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 2"></div>
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 3"></div>
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 4"></div>
+  </div>
+  <div class="slider-row reverse" id="row-2">
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 5"></div>
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 6"></div>
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 7"></div>
+    <div class="slider-item"><img src="https://via.placeholder.com/150" alt="Image 8"></div>
+  </div>
+</div>
+<script>
+
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+
+  // Calculate movement based on scroll
+  const move = scrollTop / 5; // Adjust divisor to change speed
+  
+  // Move rows in opposite directions
+  document.getElementById('row-1').style.transform = `translateX(-${move}px)`;
+  document.getElementById('row-2').style.transform = `translateX(${move}px)`;
+
+  // Save current scroll position
+  lastScrollTop = scrollTop;
+});
+
+</script>
+
+=========================================================================================================
+//   blog author hubspot
+
+
+ {% if blog_author %}
+    <div class="author-sec">
+      <div class="hs-author-profile">
+        <div class="hs-author-pic">
+          {% if blog_author.avatar %} <div class="hs-author-avatar"> <img src="{{ blog_author.avatar }}" alt="{{ blog_author.display_name }}"> </div> {% endif %}
+        </div>
+        <div class="hs-author-name-and-bio">
+          <div class="name-social-icon">
+            <h1 class="hs-author-name">{{ blog_author.display_name }}</h1>
+            <div class="hs-author-bio">{{ blog_author.bio }}</div>
+            <div class="has_social_profiles">
+              {% if blog_author.facebook %}  
+              <a href="{{ blog_author.facebook }}" target="_blank" class="hs-author-social-link hs-social-facebook">
+                <img  width="24px" height="24px" alt="facebook" src="https://mazeed.com/hubfs/facebook.svg"></a>
+              {% endif %}
+              {% if blog_author.twitter %}  
+              <a href="{{ blog_author.twitter }}" target="_blank" class="hs-author-social-link hs-social-twitter">
+                <img  width="24px" height="24px" alt="twitter" src="https://mazeed.com/hubfs/twitter.svg"></a>
+              {% endif %}
+              {% if blog_author.linkedin %}  
+              <a href="{{ blog_author.linkedin }}" target="_blank" class="hs-author-social-link hs-social-linkedin">
+                <img  width="24px" height="24px" alt="linkedin" src="https://mazeed.com/hubfs/linkedin.svg"></a>
+              {% endif %}
+              <p class="link-text" id="link-text" style="display:none;">
+
+              </p>
+              {% if blog_author.website %}
+              <a href="{{ blog_author.website }}" target="_blank" class="hs-author-social-link hs-social-website">
+                <img alt="website" width="24px" height="24px" src="https://mazeed.com/hubfs/site.png">
+              </a>
+              {% endif %}
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+    {% else %}
